@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NominaCesde</string>
+    <string name="label_inicio">Inicio de sesión</string>
+    <string name="input_usuario">Usuario</string>
+    <string name="input_contrasena">Contraseña</string>
+    <string name="button_ingresar">Ingresar</string>
+    <string name="labe_olvidaste_contrasena">¿Olvidaste tu Contraseña?</string>
+</resources>
