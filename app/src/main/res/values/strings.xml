@@ -1,8 +1,15 @@
 <resources>
+    <!--Inicio sesion-->
     <string name="app_name">NominaCesde</string>
     <string name="label_inicio">Inicio de sesión</string>
     <string name="input_usuario">Usuario</string>
     <string name="input_contrasena">Contraseña</string>
     <string name="button_ingresar">Ingresar</string>
     <string name="labe_olvidaste_contrasena">¿Olvidaste tu Contraseña?</string>
+
+    <!--Menú-->
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
