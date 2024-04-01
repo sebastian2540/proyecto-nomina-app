@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
                 VerLogin verificar = new VerLogin(usuario.getText().toString(), contrasena.getText().toString());
                 if (verificar.validacioncorreo() == 1){
                     Toast.makeText(MainActivity.this, "Bienvenido", Toast.LENGTH_SHORT).show();
-                    Intent seguir = new Intent(MainActivity.this, HomeMenu.class);
+                    Intent seguir = new Intent(MainActivity.this, Manifest.class);
                     startActivity(seguir);
                 } else {
                     Toast.makeText(MainActivity.this, "Usuario y Contraseña incorrecto", Toast.LENGTH_SHORT).show();
