@@ -1,6 +1,9 @@
 package com.example.nominacesde;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +12,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class Menu extends AppCompatActivity {
+
+   // Button btnLiquidacion;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,5 +26,17 @@ public class Menu extends AppCompatActivity {
             return insets;
 
         });
+/*
+        btnLiquidacion.findViewById(R.id.ButtonLiquidacion);
+
+        btnLiquidacion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent liquidacion = new Intent(Menu.this, LiquidacionTiempoCompleto.class);
+                startActivity(liquidacion);
+            }
+        });
+
+ */
     }
 }

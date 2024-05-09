@@ -27,7 +27,7 @@ public class VerLogin {
     }
 
     public int validacioncorreo(){
-        if((getUsuario().equals("jsanchez@cesde.com")&& getContrasena().equals("123456"))){
+        if((getUsuario().equals("1010028893")&& getContrasena().equals("1010028893"))){
             return 1;
         } else {
             return 0;
