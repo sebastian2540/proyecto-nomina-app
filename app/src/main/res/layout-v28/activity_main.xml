@@ -13,27 +13,12 @@
         android:layout_height="160dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.027"
-        app:srcCompat="@mipmap/logo"
+        app:layout_constraintVertical_bias="0.12"
+        app:srcCompat="@drawable/logo"
         tools:ignore="ContentDescription" />
-
-    <TextView
-        android:id="@+id/LabelInicioSesion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/label_inicio"
-        android:textColor="@color/black"
-        android:textSize="30dp"
-        android:textFontWeight="@integer/material_motion_duration_long_2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.264"
-        tools:ignore="SpUsage,TextSizeCheck" />
 
     <EditText
         android:id="@+id/InputUsuario"
@@ -47,7 +32,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.384"
+        app:layout_constraintVertical_bias="0.484"
         tools:ignore="Autofill,SpUsage,TextContrastCheck,TextSizeCheck" />
 
     <EditText
@@ -63,13 +48,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499"
+        app:layout_constraintVertical_bias="0.597"
         tools:ignore="TextContrastCheck,TextSizeCheck" />
 
     <Button
         android:id="@+id/ButtonIngresar"
         android:layout_width="379dp"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:backgroundTint="#049947"
         android:text="@string/button_ingresar"
         android:textColor="@color/black"
@@ -79,22 +64,35 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.627"
-        tools:ignore="SpUsage,TextSizeCheck,VisualLintButtonSize" />
+        app:layout_constraintVertical_bias="0.725"/>
 
     <TextView
         android:id="@+id/LabelOlvidasteContrasena"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/labe_olvidaste_contrasena"
+        android:text="@string/label_olvidaste_contrasena"
         android:textColor="@color/black"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.736"
+        app:layout_constraintVertical_bias="0.832"
+        tools:ignore="SpUsage,TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/LabelInicioSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_inicio"
+        android:textColor="@color/black"
+        android:textFontWeight="@integer/material_motion_duration_long_2"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.376"
         tools:ignore="SpUsage,TextSizeCheck" />
 
 

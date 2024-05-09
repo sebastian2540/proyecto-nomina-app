@@ -1,10 +1,18 @@
 <resources>
+    <!--Inicio sesion-->
     <string name="app_name">NominaCesde</string>
     <string name="label_inicio">Inicio de sesión</string>
     <string name="input_usuario">Usuario</string>
     <string name="input_contrasena">Contraseña</string>
     <string name="button_ingresar">Ingresar</string>
     <string name="labe_olvidaste_contrasena">¿Olvidaste tu Contraseña?</string>
-
+    <string name="label_olvidaste_contrasena">¿Olvidaste tu Contraseña?</string>    <!--Menú-->
+    <string name="nombre_usuario">Juan Camilo Sanchez Perez</string>
+    <string name="cargo_usuario">Administrador de Nómina</string>
+    <string name="area_usuario">Nómina</string>
+    <string name="button_empleado">Empleado</string>
+    <string name="button_area">Área</string>
+    <string name="button_liquidacion">Liquidación</string>
+    <!-- TODO: Remove or change this placeholder text -->
 
 </resources>
