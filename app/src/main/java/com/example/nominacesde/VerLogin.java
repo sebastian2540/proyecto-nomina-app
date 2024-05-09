@@ -32,5 +32,6 @@ public class VerLogin {
         } else {
             return 0;
         }
+
     }
 }

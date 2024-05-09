@@ -23,7 +23,7 @@
     <EditText
         android:id="@+id/InputUsuario"
         android:layout_width="379dp"
-        android:layout_height="50dp"
+        android:layout_height="51dp"
         android:ems="10"
         android:hint="@string/input_usuario"
         android:inputType="text"

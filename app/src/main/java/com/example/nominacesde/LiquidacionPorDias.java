@@ -42,6 +42,5 @@ public class LiquidacionPorDias extends AppCompatActivity {
             }
         },dia,mes,ano);
         dpd.show();
-
     }
 }

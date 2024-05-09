@@ -47,7 +47,6 @@ public class LiquidacionTiempoCompleto extends AppCompatActivity {
                 }
             });
             return insets;
-
         });
     }
 
@@ -64,7 +63,6 @@ public class LiquidacionTiempoCompleto extends AppCompatActivity {
             }
         },dia,mes,ano);
         dpd.show();
-
     }
 
 }

@@ -37,7 +37,6 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Usuario y Contraseña incorrecto", Toast.LENGTH_SHORT).show();
                 }
             }
-
         });
     }
 }
