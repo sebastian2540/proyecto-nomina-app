@@ -1,10 +1,13 @@
 package com.example.nominacesde;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,6 +19,7 @@ import java.util.Calendar;
 
 public class LiquidacionPorDias extends AppCompatActivity {
     TextView tv;
+    Button btnTiempoCompleto;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +28,9 @@ public class LiquidacionPorDias extends AppCompatActivity {
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+
+            btnTiempoCompleto = (Button) findViewById(R.id.botonTiempoCompleto);
+            btnTiempoCompleto.setOnClickListener(this::liquidacionTiempoCompleto);
 
             tv = findViewById(R.id.fechaIngreso);
             return insets;
@@ -42,5 +49,11 @@ public class LiquidacionPorDias extends AppCompatActivity {
             }
         },dia,mes,ano);
         dpd.show();
+    }
+
+    public void liquidacionTiempoCompleto(View view) {
+        Intent lqTiempoCompleto = new Intent(LiquidacionPorDias.this, LiquidacionTiempoCompleto.class);
+        startActivity(lqTiempoCompleto);
+        Toast.makeText(getApplicationContext(), "Ha presionado el boton liquidación tiempo completo", Toast.LENGTH_SHORT).show();
     }
 }

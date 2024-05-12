@@ -26,7 +26,7 @@ public class VerLogin {
         this.contrasena = contrasena;
     }
 
-    public int validacioncorreo(){
+    public int validacionUsuario(){
         if((getUsuario().equals("1010028893")&& getContrasena().equals("1010028893"))){
             return 1;
         } else {

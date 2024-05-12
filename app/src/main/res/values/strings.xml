@@ -1,6 +1,6 @@
 <resources>
     <!--Inicio sesion-->
-    <string name="app_name">NominaCesde</string>
+    <string name="app_name">Nomina Cesde</string>
     <string name="label_inicio">Inicio de sesión</string>
     <string name="input_usuario">Usuario</string>
     <string name="input_contrasena">Contraseña</string>

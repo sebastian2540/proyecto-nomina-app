@@ -22,11 +22,11 @@
 
     <EditText
         android:id="@+id/InputUsuario"
-        android:layout_width="379dp"
+        android:layout_width="380dp"
         android:layout_height="51dp"
         android:ems="10"
         android:hint="@string/input_usuario"
-        android:inputType="text"
+        android:inputType="number"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,12 +37,12 @@
 
     <EditText
         android:id="@+id/InputContrasena"
-        android:layout_width="379dp"
+        android:layout_width="380dp"
         android:layout_height="50dp"
         android:ems="10"
         android:hint="@string/input_contrasena"
         android:importantForAutofill="no"
-        android:inputType="textPassword"
+        android:inputType="numberPassword"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -86,6 +86,7 @@
         android:layout_height="wrap_content"
         android:text="@string/label_inicio"
         android:textColor="@color/black"
+        android:textStyle="bold"
         android:textFontWeight="@integer/material_motion_duration_long_2"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -94,6 +95,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.376"
         tools:ignore="SpUsage,TextSizeCheck" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

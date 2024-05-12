@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 VerLogin verificar = new VerLogin(usuario.getText().toString(), contrasena.getText().toString());
-                if (verificar.validacioncorreo() == 1) {
+                if (verificar.validacionUsuario() == 1) {
                     Toast.makeText(MainActivity.this, "Bienvenido", Toast.LENGTH_SHORT).show();
                     Intent seguir = new Intent(MainActivity.this, Menu.class);
                     startActivity(seguir);
