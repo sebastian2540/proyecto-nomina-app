@@ -26,7 +26,7 @@ public class LiquidacionTiempoCompleto extends AppCompatActivity {
     Spinner listas;
     String[] datos = {"I","II","III","IV","V"};
 
-    Button  btnPorDias;
+    Button  btnTiemporCompleto;
 
     ImageButton btnMenu;
     @Override
@@ -40,8 +40,8 @@ public class LiquidacionTiempoCompleto extends AppCompatActivity {
             tv = findViewById(R.id.fechaIngreso);
             listas = (Spinner)findViewById(R.id.lista);
 
-            btnPorDias = (Button) findViewById(R.id.botonPorDias);
-            btnPorDias.setOnClickListener(this::liquidacionPorDias);
+            btnTiemporCompleto = (Button) findViewById(R.id.botonTiempoCompleto);
+            btnTiemporCompleto.setOnClickListener(this::liquidacionPorDias);
 
             btnMenu = (ImageButton) findViewById(R.id.imageButtonMenu);
             btnMenu.setOnClickListener(this::menu);

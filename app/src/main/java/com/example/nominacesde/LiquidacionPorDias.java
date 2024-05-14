@@ -4,8 +4,11 @@ import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -19,7 +22,9 @@ import java.util.Calendar;
 
 public class LiquidacionPorDias extends AppCompatActivity {
     TextView tv;
-    Button btnTiempoCompleto;
+    Spinner listas;
+    String[] datos = {"I","II","III","IV","V"};
+    Button btnPorDias;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,10 +34,23 @@ public class LiquidacionPorDias extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
 
-            btnTiempoCompleto = (Button) findViewById(R.id.botonTiempoCompleto);
-            btnTiempoCompleto.setOnClickListener(this::liquidacionTiempoCompleto);
+            btnPorDias = (Button) findViewById(R.id.botonPorDias);
+            btnPorDias.setOnClickListener(this::liquidacionTiempoCompleto);
 
             tv = findViewById(R.id.fechaIngreso);
+            ArrayAdapter<String> adaptador= new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item,datos);
+            listas.setAdapter(adaptador);
+            listas.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                @Override
+                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+                }
+
+                @Override
+                public void onNothingSelected(AdapterView<?> parent) {
+
+                }
+            });
             return insets;
         });
     }
