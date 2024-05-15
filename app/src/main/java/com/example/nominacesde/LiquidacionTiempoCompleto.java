@@ -25,9 +25,7 @@ public class LiquidacionTiempoCompleto extends AppCompatActivity {
     TextView tv;
     Spinner listas;
     String[] datos = {"I","II","III","IV","V"};
-
-    Button  btnTiemporCompleto;
-
+    Button btnPorDias;
     ImageButton btnMenu;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,10 +36,10 @@ public class LiquidacionTiempoCompleto extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             tv = findViewById(R.id.fechaIngreso);
-            listas = (Spinner)findViewById(R.id.lista);
+            listas = (Spinner)findViewById(R.id.lista_tiempo_completo);
 
-            btnTiemporCompleto = (Button) findViewById(R.id.botonTiempoCompleto);
-            btnTiemporCompleto.setOnClickListener(this::liquidacionPorDias);
+            btnPorDias = (Button) findViewById(R.id.botonPorDias);
+            btnPorDias.setOnClickListener(this::liquidacionPorDias);
 
             btnMenu = (ImageButton) findViewById(R.id.imageButtonMenu);
             btnMenu.setOnClickListener(this::menu);
@@ -89,7 +87,4 @@ public class LiquidacionTiempoCompleto extends AppCompatActivity {
         startActivity(menu);
         Toast.makeText(getApplicationContext(), "Ha presionado el boton menu", Toast.LENGTH_SHORT).show();
     }
-
-
-
 }

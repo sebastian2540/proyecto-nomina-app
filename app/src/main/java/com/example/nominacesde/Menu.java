@@ -16,7 +16,7 @@ import com.example.nominacesde.LiquidacionTiempoCompleto;
 
 public class Menu extends AppCompatActivity implements View.OnClickListener{
 
-   Button btnLiquidacion, btnEmpleado, btnArea;
+   Button btnLiquidacion, btnEmpleado, btnArea, btnCerrarSesion;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +33,8 @@ public class Menu extends AppCompatActivity implements View.OnClickListener{
         btnLiquidacion = (Button) findViewById(R.id.ButtonLiquidacion);
         btnLiquidacion.setOnClickListener(this);
 
-
+        btnArea = (Button) findViewById(R.id.ButtonCerrarSesion);
+        btnArea.setOnClickListener(this::cerrarSesion);
     }
     @Override
     public void onClick(View v) {
@@ -52,6 +53,12 @@ public class Menu extends AppCompatActivity implements View.OnClickListener{
         Intent areas = new Intent(Menu.this, Area.class);
         startActivity(areas);
         Toast.makeText(getApplicationContext(), "Ha presionado el boton area", Toast.LENGTH_SHORT).show();
+    }
+
+    public void cerrarSesion(View view) {
+        Intent cerrarSesion = new Intent(Menu.this, MainActivity.class);
+        startActivity(cerrarSesion);
+        Toast.makeText(getApplicationContext(), "Ha presionado el boton cerrar sesión", Toast.LENGTH_SHORT).show();
     }
 
 

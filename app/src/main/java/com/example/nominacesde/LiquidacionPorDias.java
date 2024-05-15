@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -24,7 +25,8 @@ public class LiquidacionPorDias extends AppCompatActivity {
     TextView tv;
     Spinner listas;
     String[] datos = {"I","II","III","IV","V"};
-    Button btnPorDias;
+    Button btnTiempoCompleto;
+    ImageButton btnMenu;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,11 +35,15 @@ public class LiquidacionPorDias extends AppCompatActivity {
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-
-            btnPorDias = (Button) findViewById(R.id.botonPorDias);
-            btnPorDias.setOnClickListener(this::liquidacionTiempoCompleto);
-
             tv = findViewById(R.id.fechaIngreso);
+            listas = (Spinner)findViewById(R.id.lista_por_dias);
+
+            btnTiempoCompleto = (Button) findViewById(R.id.botonTiempoCompleto);
+            btnTiempoCompleto.setOnClickListener(this::liquidacionTiempoCompleto);
+
+            btnMenu = (ImageButton) findViewById(R.id.imageButtonMenu);
+            btnMenu.setOnClickListener(this::menu);
+
             ArrayAdapter<String> adaptador= new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item,datos);
             listas.setAdapter(adaptador);
             listas.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -54,6 +60,7 @@ public class LiquidacionPorDias extends AppCompatActivity {
             return insets;
         });
     }
+
     public void abrirCalendario(View view) {
         Calendar cal = Calendar.getInstance();
         int ano = cal.get(Calendar.YEAR);
@@ -73,5 +80,11 @@ public class LiquidacionPorDias extends AppCompatActivity {
         Intent lqTiempoCompleto = new Intent(LiquidacionPorDias.this, LiquidacionTiempoCompleto.class);
         startActivity(lqTiempoCompleto);
         Toast.makeText(getApplicationContext(), "Ha presionado el boton liquidación tiempo completo", Toast.LENGTH_SHORT).show();
+    }
+
+    public void menu(View view) {
+        Intent menu = new Intent(LiquidacionPorDias.this, Menu.class);
+        startActivity(menu);
+        Toast.makeText(getApplicationContext(), "Ha presionado el boton menu", Toast.LENGTH_SHORT).show();
     }
 }

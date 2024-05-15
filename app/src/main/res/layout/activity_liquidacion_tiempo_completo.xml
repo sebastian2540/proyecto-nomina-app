@@ -16,17 +16,17 @@
         android:layout_width="172dp"
         android:layout_height="53dp"
         android:backgroundTint="#DCDFDEDE"
-        android:text="Liquidación tiempo completo"
+        android:text="@string/button_liquidacion_tiempo_completo"
         android:textColor="@color/black"
         android:textColorHint="#151414"
         android:textColorLink="#0E0D0D"
-        app:cornerRadius="0dp"
+        app:cornerRadius="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintHorizontal_bias="0.066"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.169"
+        app:layout_constraintVertical_bias="0.14"
         app:strokeColor="@color/black"
         tools:ignore="HardcodedText,TextSizeCheck,TextContrastCheck" />
 
@@ -35,15 +35,15 @@
         style="?attr/materialButtonOutlinedStyle"
         android:layout_width="172dp"
         android:layout_height="53dp"
-        android:text="Liquidación por días"
+        android:text="@string/button_liquidacion_por_dias"
         android:textColor="@color/black"
-        app:cornerRadius="0dp"
+        app:cornerRadius="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.887"
+        app:layout_constraintHorizontal_bias="0.933"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.169"
+        app:layout_constraintVertical_bias="0.14"
         app:strokeColor="@color/black"
         tools:ignore="HardcodedText,TextContrastCheck" />
 
@@ -52,10 +52,12 @@
         android:layout_width="169dp"
         android:layout_height="57dp"
         android:gravity="center"
-        android:text="1.FECHA DE INICIO DEL PERIODO A LIQUIDAR:"
+        android:text="@string/label_fecha_inicio_liquidar"
+        android:textColor="@color/black"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintHorizontal_bias="0.119"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.264"
@@ -66,7 +68,8 @@
         android:layout_width="169dp"
         android:layout_height="57dp"
         android:paddingLeft="10dp"
-        android:text=" 2. FECHA DE FINALIZACIÓN DEL PERIODO A LIQUIDAR"
+        android:text="@string/label_fecha_final_liquidar"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.119"
@@ -81,7 +84,8 @@
         android:layout_height="57dp"
         android:paddingLeft="10dp"
         android:paddingTop="10dp"
-        android:text="3.INGRESE SU SALARIO MENSUAL"
+        android:text="@string/label_salario"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.12"
@@ -96,7 +100,8 @@
         android:layout_height="57dp"
         android:paddingLeft="10dp"
         android:paddingTop="5dp"
-        android:text=" 4. ¿TIENE DERECHO  A UN AUXILIO DE TRANSPORTE?"
+        android:text="@string/label_auxilio_transporte"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.124"
@@ -109,24 +114,27 @@
         android:layout_width="59dp"
         android:layout_height="25dp"
         android:text="SI"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.633"
+        app:layout_constraintHorizontal_bias="0.696"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.549" />
+        app:layout_constraintVertical_bias="0.547" />
 
     <CheckBox
         android:id="@+id/checkBox2"
         android:layout_width="59dp"
         android:layout_height="25dp"
+        android:checked="true"
         android:text="NO"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.84"
+        app:layout_constraintHorizontal_bias="0.911"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.549" />
+        app:layout_constraintVertical_bias="0.548" />
 
     <Button
         android:id="@+id/fechaIngreso"
@@ -134,15 +142,15 @@
         android:layout_height="40dp"
         android:backgroundTint="@color/white"
         android:onClick="abrirCalendario"
-        android:text="01/01/2024"
+        android:text="@string/button_fecha_defecto"
         android:textColor="#A8000000"
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.887"
+        app:layout_constraintHorizontal_bias="0.933"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.272" />
+        app:layout_constraintVertical_bias="0.273" />
 
     <Button
         android:id="@+id/fechaFinal"
@@ -150,35 +158,39 @@
         android:layout_height="40dp"
         android:backgroundTint="@color/white"
         android:onClick="abrirCalendario"
-        android:text="01/01/2024"
+        android:text="@string/button_fecha_defecto"
         android:textColor="#A8000000"
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.879"
+        app:layout_constraintHorizontal_bias="0.933"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.364" />
+        app:layout_constraintVertical_bias="0.363" />
 
     <EditText
         android:id="@+id/diasTrabajados"
         android:layout_width="167dp"
         android:layout_height="40dp"
         android:ems="10"
+        android:hint="@string/edittext_salario_mensual_defecto"
         android:inputType="numberDecimal"
+        android:textSize="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.889"
+        app:layout_constraintHorizontal_bias="0.926"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.458" />
+        app:layout_constraintVertical_bias="0.46" />
 
     <TextView
         android:id="@+id/riesgoLaboral"
         android:layout_width="167dp"
         android:layout_height="85dp"
         android:paddingLeft="10dp"
-        android:text="5. Seleccione la clase de riesgos laborales correspondiente al sector de actividad y al cargo del trabajador."
+        android:text="@string/label_clase"
+        android:textColor="@color/black"
+        android:textSize="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.122"
@@ -188,44 +200,46 @@
 
     <Button
         android:id="@+id/liquidacionEmpleado"
-        android:layout_width="145dp"
-        android:layout_height="72dp"
-        android:backgroundTint="#DCDFDEDE"
-        android:text="Liquidación para empleado"
+        android:layout_width="172dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#FF9800"
+        android:text="@string/button_liquidacion_para_empleado"
         android:textColor="@color/black"
         app:cornerRadius="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintHorizontal_bias="0.066"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.918" />
+        app:layout_constraintVertical_bias="0.953" />
 
     <Button
         android:id="@+id/liquidacionEmpleador"
-        android:layout_width="145dp"
-        android:layout_height="72dp"
-        android:backgroundTint="#DCDFDEDE"
-        android:text="Liquidación para empleador"
+        android:layout_width="172dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#FF5722"
+        android:text="@string/button_liquidacion_para_empleador"
         android:textColor="@color/black"
         app:cornerRadius="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.838"
+        app:layout_constraintHorizontal_bias="0.924"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.918" />
+        app:layout_constraintVertical_bias="0.952" />
 
     <Spinner
-        android:id="@+id/lista"
-        android:layout_width="127dp"
+        android:id="@+id/lista_tiempo_completo"
+        android:layout_width="148dp"
         android:layout_height="25dp"
+        android:backgroundTint="@color/white"
+        android:textSize="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.802"
+        app:layout_constraintHorizontal_bias="0.89"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.657" />
+        app:layout_constraintVertical_bias="0.651" />
 
     <ImageButton
         android:id="@+id/imageButtonMenu"
@@ -238,6 +252,21 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.026"
         app:srcCompat="@drawable/iconmenu" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_liquidacion"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

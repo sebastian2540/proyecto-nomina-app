@@ -9,52 +9,55 @@
     tools:layout_editor_absoluteX="-179dp"
     tools:layout_editor_absoluteY="-3dp">
 
+
     <Button
         android:id="@+id/liquidacionEmpleador"
-        android:layout_width="145dp"
-        android:layout_height="72dp"
-        android:backgroundTint="#DCDFDEDE"
-        android:text="Liquidación para empleador"
+        android:layout_width="172dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#FF5722"
+        android:text="@string/button_liquidacion_para_empleador"
         android:textColor="@color/black"
         app:cornerRadius="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.845"
+        app:layout_constraintHorizontal_bias="0.924"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.954"
+        app:layout_constraintVertical_bias="0.952"
         tools:ignore="HardcodedText,TextSizeCheck" />
 
     <Button
         android:id="@+id/liquidacionEmpleado"
-        android:layout_width="145dp"
-        android:layout_height="72dp"
-        android:backgroundTint="#DCDFDEDE"
-        android:text="Liquidación para empleado"
+        android:layout_width="172dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#FF9800"
+        android:text="@string/button_liquidacion_para_empleado"
         android:textColor="@color/black"
         app:cornerRadius="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintHorizontal_bias="0.066"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.954"
+        app:layout_constraintVertical_bias="0.953"
         tools:ignore="HardcodedText" />
-
 
     <EditText
         android:id="@+id/diasTrabajados"
         android:layout_width="167dp"
         android:layout_height="48dp"
+        android:autofillHints=""
         android:ems="10"
+        android:hint="@string/edittext_dias_defecto"
         android:inputType="numberDecimal"
+        android:textSize="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.889"
+        app:layout_constraintHorizontal_bias="0.926"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.544"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:layout_constraintVertical_bias="0.563"
+        tools:ignore="SpUsage,SpeakableTextPresentCheck,TextSizeCheck" />
 
     <Button
         android:id="@+id/fechaFinal"
@@ -62,15 +65,15 @@
         android:layout_height="48dp"
         android:backgroundTint="@color/white"
         android:onClick="abrirCalendario"
-        android:text="01/01/2024"
+        android:text="@string/button_fecha_defecto"
         android:textColor="#A8000000"
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.879"
+        app:layout_constraintHorizontal_bias="0.933"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.364" />
+        app:layout_constraintVertical_bias="0.363" />
 
     <Button
         android:id="@+id/fechaIngreso"
@@ -78,15 +81,15 @@
         android:layout_height="48dp"
         android:backgroundTint="@color/white"
         android:onClick="abrirCalendario"
-        android:text="01/01/2024"
+        android:text="@string/button_fecha_defecto"
         android:textColor="#A8000000"
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.887"
+        app:layout_constraintHorizontal_bias="0.933"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.272"
+        app:layout_constraintVertical_bias="0.273"
         tools:ignore="DuplicateSpeakableTextCheck" />
 
     <TextView
@@ -94,14 +97,15 @@
         android:layout_width="172dp"
         android:layout_height="85dp"
         android:paddingStart="10dp"
-        android:text="6.. Seleccione la clase de riesgos laborales correspondiente al sector de actividad y al cargo del trabajador."
+        android:text="@string/label_clase_dias"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.108"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.795"
-        tools:ignore="HardcodedText,RtlSymmetry" />
+        tools:ignore="HardcodedText,RtlSymmetry,TextSizeCheck" />
 
     <TextView
         android:id="@+id/auxilioTransporte"
@@ -109,14 +113,15 @@
         android:layout_height="57dp"
         android:paddingLeft="10dp"
         android:paddingTop="5dp"
-        android:text="5. ¿TIENE DERECHO  A UN AUXILIO DE TRANSPORTE?"
+        android:textColor="@color/black"
+        android:text="@string/label_auxilio_transporte_dias"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.108"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.658"
-        tools:ignore="RtlHardcoded,RtlSymmetry,TextSizeCheck" />
+        tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry,TextSizeCheck" />
 
     <TextView
         android:id="@+id/salarioIngresado"
@@ -124,7 +129,8 @@
         android:layout_height="57dp"
         android:paddingLeft="10dp"
         android:paddingTop="10dp"
-        android:text="3.INGRESE SU SALARIO DIARIO"
+        android:text="@string/label_salario"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.108"
@@ -138,7 +144,8 @@
         android:layout_width="172dp"
         android:layout_height="57dp"
         android:paddingLeft="10dp"
-        android:text=" 2. FECHA DE FINALIZACIÓN DEL PERIODO A LIQUIDAR"
+        android:text="@string/label_fecha_final_liquidar"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.108"
@@ -152,7 +159,8 @@
         android:layout_width="172dp"
         android:layout_height="57dp"
         android:gravity="center"
-        android:text="1.FECHA DE INICIO DEL PERIODO A LIQUIDAR:"
+        android:text="@string/label_fecha_inicio_liquidar"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.107"
@@ -167,15 +175,15 @@
         android:layout_width="172dp"
         android:layout_height="53dp"
         android:backgroundTint="#DCDFDEDE"
-        android:text="Liquidación por días"
+        android:text="@string/button_liquidacion_por_dias"
         android:textColor="@color/black"
-        app:cornerRadius="0dp"
+        app:cornerRadius="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.887"
+        app:layout_constraintHorizontal_bias="0.933"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.169"
+        app:layout_constraintVertical_bias="0.14"
         app:strokeColor="@color/black"
         tools:ignore="HardcodedText,TextContrastCheck" />
 
@@ -184,46 +192,48 @@
         style="?attr/materialButtonOutlinedStyle"
         android:layout_width="172dp"
         android:layout_height="53dp"
-        android:text="Liquidación tiempo completo"
+        android:text="@string/button_liquidacion_tiempo_completo"
         android:textColor="@color/black"
         android:textColorHint="#151414"
         android:textColorLink="#0E0D0D"
-        app:cornerRadius="0dp"
+        app:cornerRadius="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintHorizontal_bias="0.066"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.169"
+        app:layout_constraintVertical_bias="0.14"
         app:strokeColor="@color/black"
         tools:ignore="HardcodedText,TextSizeCheck,TextContrastCheck" />
 
     <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="50dp"
-        android:layout_height="40dp"
+        android:id="@+id/imageButtonMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintHorizontal_bias="0.044"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintVertical_bias="0.026"
         app:srcCompat="@drawable/iconmenu"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
-        android:importantForAccessibility="no" />
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/diasLaboradosSemana"
         android:layout_width="172dp"
         android:layout_height="57dp"
-        android:gravity="center"
-        android:text="4.DIAS LABORADOS SEMANA"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/label_dias_laborados_semana"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.108"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.557" />
+        app:layout_constraintVertical_bias="0.557"
+        tools:ignore="HardcodedText,TextSizeCheck" />
 
     <CheckBox
         android:id="@+id/checkBox3"
@@ -232,47 +242,71 @@
         android:text="Si"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.644"
+        app:layout_constraintHorizontal_bias="0.69"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.653" />
+        app:layout_constraintVertical_bias="0.649"
+        tools:ignore="HardcodedText,TouchTargetSizeCheck,TextSizeCheck" />
 
     <CheckBox
         android:id="@+id/checkBox4"
         android:layout_width="59dp"
         android:layout_height="25dp"
+        android:checked="true"
         android:text="No"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.866"
+        app:layout_constraintHorizontal_bias="0.883"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.653" />
+        app:layout_constraintVertical_bias="0.651"
+        tools:ignore="HardcodedText,TouchTargetSizeCheck,TextSizeCheck" />
 
     <EditText
         android:id="@+id/salarioDiario"
         android:layout_width="166dp"
         android:layout_height="48dp"
         android:ems="10"
+        android:hint="@string/edittext_salario_diario_defecto"
         android:importantForAutofill="no"
         android:inputType="text"
+        android:textSize="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.865"
+        app:layout_constraintHorizontal_bias="0.926"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.459"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:layout_constraintVertical_bias="0.46"
+        tools:ignore="SpUsage,TextContrastCheck,TextSizeCheck" />
 
     <Spinner
-        android:id="@+id/listas"
+        android:id="@+id/lista_por_dias"
         android:layout_width="127dp"
         android:layout_height="25dp"
+        android:textSize="14dp"
+        android:backgroundTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.855"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.738" />
+        app:layout_constraintVertical_bias="0.738"
+        tools:ignore="SpUsage,TextSizeCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_liquidacion"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046"
+        tools:ignore="SpUsage,TextSizeCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -112,6 +112,21 @@
         app:layout_constraintVertical_bias="0.736"
         tools:ignore="SpUsage" />
 
+    <Button
+        android:id="@+id/ButtonCerrarSesion"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/red"
+        android:text="@string/button_cerrarsesion"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.826"
+        tools:ignore="SpUsage" />
+
     <ImageView
         android:id="@+id/ImageLogoCesde"
         android:layout_width="wrap_content"
@@ -121,7 +136,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.926"
+        app:layout_constraintVertical_bias="0.950"
         app:srcCompat="@drawable/logo_cesde"
         tools:ignore="ContentDescription" />
 
