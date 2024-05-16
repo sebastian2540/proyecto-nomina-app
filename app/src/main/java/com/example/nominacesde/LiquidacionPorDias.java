@@ -25,7 +25,7 @@ public class LiquidacionPorDias extends AppCompatActivity {
     TextView tv;
     Spinner listas;
     String[] datos = {"I","II","III","IV","V"};
-    Button btnTiempoCompleto;
+    Button btnTiempoCompleto, btnColillaEmpleado;
     ImageButton btnMenu;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +43,9 @@ public class LiquidacionPorDias extends AppCompatActivity {
 
             btnMenu = (ImageButton) findViewById(R.id.imageButtonMenu);
             btnMenu.setOnClickListener(this::menu);
+
+            btnColillaEmpleado = (Button) findViewById(R.id.liquidacionEmpleado);
+            btnColillaEmpleado.setOnClickListener(this::colillaEmpleado);
 
             ArrayAdapter<String> adaptador= new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item,datos);
             listas.setAdapter(adaptador);
@@ -86,5 +89,11 @@ public class LiquidacionPorDias extends AppCompatActivity {
         Intent menu = new Intent(LiquidacionPorDias.this, Menu.class);
         startActivity(menu);
         Toast.makeText(getApplicationContext(), "Ha presionado el boton menu", Toast.LENGTH_SHORT).show();
+    }
+
+    public void colillaEmpleado(View view) {
+        Intent colillaNomimaEmpleado = new Intent(LiquidacionPorDias.this, PlanillaNomina.class);
+        startActivity(colillaNomimaEmpleado);
+        Toast.makeText(getApplicationContext(), "Ha presionado el boton liquidacion para empleado", Toast.LENGTH_SHORT).show();
     }
 }

@@ -9,7 +9,7 @@
     <string name="label_olvidaste_contrasena">¿Olvidaste tu Contraseña?</string>
     <!--Menú-->
     <string name="nombre_usuario">Juan Camilo Sanchez Perez</string>
-    <string name="cargo_usuario">Administrador de Nómina</string>
+    <string name="cargo_usuario">Administrador</string>
     <string name="area_usuario">Nómina</string>
     <string name="button_empleado">Empleado</string>
     <string name="button_area">Área</string>
@@ -33,8 +33,15 @@
     <string name="edittext_salario_mensual_defecto">1300000</string>
     <string name="edittext_salario_diario_defecto">43333</string>
     <string name="edittext_dias_defecto">48</string>
+    <string name="button_guardar_liquidacion">Guardar</string>
+    <string name="button_cancelar_liquidacion">Canelar</string>
     <!--Empleado-->
     <string name="label_empleado">Empleado</string>
+    <string name="button_guardar_empleado">Guardar</string>
+    <string name="button_cancelar_empleado">Canelar</string>
+    <string name="button_editar">Editar</string>
+    <string name="button_borrar">Borrar</string>
+    <string name="button_activar">Estado</string>
 
 
     <!--Area-->

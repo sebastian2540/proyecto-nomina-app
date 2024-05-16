@@ -173,7 +173,7 @@
         android:id="@+id/botonPorDias"
         style="?attr/materialButtonOutlinedStyle"
         android:layout_width="172dp"
-        android:layout_height="53dp"
+        android:layout_height="55dp"
         android:backgroundTint="#DCDFDEDE"
         android:text="@string/button_liquidacion_por_dias"
         android:textColor="@color/black"
@@ -191,7 +191,7 @@
         android:id="@+id/botonTiempoCompleto"
         style="?attr/materialButtonOutlinedStyle"
         android:layout_width="172dp"
-        android:layout_height="53dp"
+        android:layout_height="55dp"
         android:text="@string/button_liquidacion_tiempo_completo"
         android:textColor="@color/black"
         android:textColorHint="#151414"
@@ -233,7 +233,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.557"
-        tools:ignore="HardcodedText,TextSizeCheck" />
+        tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry,TextSizeCheck" />
 
     <CheckBox
         android:id="@+id/checkBox3"
@@ -308,5 +308,37 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.046"
         tools:ignore="SpUsage,TextSizeCheck" />
+
+    <Button
+        android:id="@+id/GuardarLiquidacion"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:backgroundTint="#4CAF50"
+        android:text="@string/button_guardar_liquidacion"
+        android:textColor="@color/black"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.942"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.833"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/CancelarLiquidacion"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:backgroundTint="#F44336"
+        android:text="@string/button_cancelar_liquidacion"
+        android:textColor="@color/black"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.550"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.834"
+        tools:ignore="TouchTargetSizeCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
