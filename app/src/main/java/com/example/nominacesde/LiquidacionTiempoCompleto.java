@@ -24,7 +24,7 @@ import java.util.Calendar;
 public class LiquidacionTiempoCompleto extends AppCompatActivity {
     TextView tv;
     Spinner listas;
-    String[] datos = {"I","II","III","IV","V"};
+    String[] datos = {"Dayana Hernandez", "Luisa Rojas Metaute", "Sebastian Villada", "Susana Villa"};
     Button btnPorDias, btnColillaEmpleado;
     ImageButton btnMenu;
     @Override
@@ -72,7 +72,7 @@ public class LiquidacionTiempoCompleto extends AppCompatActivity {
         DatePickerDialog dpd = new DatePickerDialog(LiquidacionTiempoCompleto.this, new DatePickerDialog.OnDateSetListener() {
             @Override
             public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
-                String fecha = dayOfMonth + "/" + month + "/"  + year;
+                String fecha = dayOfMonth + "/" + (month + 1) + "/"  + year;
                 tv.setText(fecha);
             }
         },dia,mes,ano);

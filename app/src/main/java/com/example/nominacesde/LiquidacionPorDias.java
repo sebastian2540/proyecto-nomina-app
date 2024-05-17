@@ -24,7 +24,7 @@ import java.util.Calendar;
 public class LiquidacionPorDias extends AppCompatActivity {
     TextView tv;
     Spinner listas;
-    String[] datos = {"I","II","III","IV","V"};
+    String[] datos = {"Dayana Hernandez", "Luisa Rojas Metaute", "Sebastian Villada", "Susana Villa"};
     Button btnTiempoCompleto, btnColillaEmpleado;
     ImageButton btnMenu;
     @Override
