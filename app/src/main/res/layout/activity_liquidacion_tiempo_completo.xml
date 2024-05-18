@@ -56,10 +56,10 @@
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintHorizontal_bias="0.066"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.325"
+        app:layout_constraintVertical_bias="0.315"
         tools:ignore="HardcodedText,TextSizeCheck" />
 
     <TextView
@@ -71,10 +71,10 @@
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintHorizontal_bias="0.066"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.44"
+        app:layout_constraintVertical_bias="0.423"
         tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry,TextSizeCheck" />
 
     <TextView
@@ -86,25 +86,26 @@
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintHorizontal_bias="0.066"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.554"
+        app:layout_constraintVertical_bias="0.529"
         tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry,TextSizeCheck" />
 
     <TextView
         android:id="@+id/auxilioTransporte"
-        android:layout_width="170dp"
-        android:layout_height="57dp"
-        android:gravity="center"
+        android:layout_width="169dp"
+        android:layout_height="70dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
         android:text="@string/label_auxilio_transporte"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintHorizontal_bias="0.066"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.667"
+        app:layout_constraintVertical_bias="0.645"
         tools:ignore="RtlHardcoded,RtlSymmetry,TextSizeCheck" />
 
     <CheckBox
@@ -118,7 +119,7 @@
         app:layout_constraintHorizontal_bias="0.687"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.651"
+        app:layout_constraintVertical_bias="0.627"
         tools:ignore="HardcodedText,TextSizeCheck,TouchTargetSizeCheck" />
 
     <CheckBox
@@ -133,7 +134,7 @@
         app:layout_constraintHorizontal_bias="0.928"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.649"
+        app:layout_constraintVertical_bias="0.626"
         tools:ignore="HardcodedText,TextSizeCheck,TouchTargetSizeCheck" />
 
     <Button
@@ -150,7 +151,7 @@
         app:layout_constraintHorizontal_bias="0.933"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.329"
+        app:layout_constraintVertical_bias="0.319"
         tools:ignore="DuplicateSpeakableTextCheck,TouchTargetSizeCheck" />
 
     <Button
@@ -164,15 +165,15 @@
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.937"
+        app:layout_constraintHorizontal_bias="0.933"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.442"
+        app:layout_constraintVertical_bias="0.426"
         tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/diasTrabajados"
-        android:layout_width="167dp"
+        android:layout_width="170dp"
         android:layout_height="40dp"
         android:ems="10"
         android:hint="@string/edittext_salario_mensual_defecto"
@@ -180,10 +181,10 @@
         android:textSize="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.934"
+        app:layout_constraintHorizontal_bias="0.937"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.549"
+        app:layout_constraintVertical_bias="0.529"
         tools:ignore="Autofill,SpUsage,TextSizeCheck,TouchTargetSizeCheck" />
 
     <Button
@@ -218,16 +219,16 @@
 
     <Spinner
         android:id="@+id/lista_tiempo_completo"
-        android:layout_width="291dp"
-        android:layout_height="24dp"
-        android:backgroundTint="@color/white"
+        android:layout_width="380dp"
+        android:layout_height="30dp"
+        android:backgroundTint="@color/black"
         android:textSize="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.247"
+        app:layout_constraintVertical_bias="0.235"
         tools:ignore="SpUsage,TextSizeCheck,TouchTargetSizeCheck" />
 
     <ImageButton
@@ -272,7 +273,7 @@
         app:layout_constraintHorizontal_bias="0.942"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.815"
+        app:layout_constraintVertical_bias="0.843"
         tools:ignore="TouchTargetSizeCheck" />
 
     <Button
@@ -288,7 +289,7 @@
         app:layout_constraintHorizontal_bias="0.543"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.817"
+        app:layout_constraintVertical_bias="0.845"
         tools:ignore="TouchTargetSizeCheck" />
 
 

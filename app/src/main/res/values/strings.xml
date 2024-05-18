@@ -42,10 +42,35 @@
     <string name="button_editar">Editar</string>
     <string name="button_borrar">Borrar</string>
     <string name="button_activar">Estado</string>
+    <string name="input_identificacion">Identificacion</string>
+    <string name="input_nombre_empleado">Nombre</string>
+    <string name="input_apellido_empleado">Apellido</string>
+    <string name="input_email_empleado">Email</string>
+    <string name="input_cargo_empleado">Cargo</string>
+    <string name="input_rol_empleado">Rol</string>
+    <string name="input_area_empleado">Área</string>
+
 
 
     <!--Area-->
     <string name="label_area">Área</string>
+
+
+    <!--Colilla-->
+    <string name="label_info_empresa">INFORMACIÓN EMPRESA</string>
+    <string name="label_nit_empresa">NIT EMPRESA</string>
+    <string name="label_texto_documento_soporte">Documento Soporte de Pago de Nómina Electrónica</string>
+    <string name="label_periodo_pago">Periodo de Pago:</string>
+    <string name="label_nombre_empleado">Nombre Empleado:</string>
+    <string name="label_identificacion_empleado">Identificacion Empleado:</string>
+    <string name="label_ingresos">INGRESOS</string>
+    <string name="label_concepto">Concepto</string>
+    <string name="label_cantidad">Cantidad</string>
+    <string name="label_valor">Valor</string>
+    <string name="label_total_ingresos">Total Ingresos</string>
+    <string name="label_deducciones">DEDUCCIONES</string>">
+    <string name="label_total_deducciones">Total Deducciones</string>
+    <string name="label_neto_pagar">Neto a Pagar</string>
     <!-- TODO: Remove or change this placeholder text -->
 
 </resources>

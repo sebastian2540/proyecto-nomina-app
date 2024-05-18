@@ -15,32 +15,35 @@
       android:layout_height="23dp"
       android:background="#C8E0F3"
       android:gravity="center"
-      android:text="Cantidad "
+      android:text="@string/label_cantidad"
+      android:textColor="@color/black"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.528"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.38" />
+      app:layout_constraintVertical_bias="0.38"
+      tools:ignore="TextSizeCheck" />
 
   <TextView
       android:id="@+id/textView"
       android:layout_width="190dp"
       android:layout_height="22dp"
       android:gravity="center"
-      android:text="INFORMACIÓN EMPRESA"
+      android:text="@string/label_info_empresa"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.737"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.025" />
+      app:layout_constraintVertical_bias="0.025"
+      tools:ignore="TextSizeCheck" />
 
   <TextView
       android:id="@+id/textView2"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="NIT EMPRESA"
+      android:text="@string/label_nit_empresa"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.639"
@@ -53,49 +56,59 @@
       android:layout_width="256dp"
       android:layout_height="33dp"
       android:gravity="center"
-      android:text="Documento soporte de pago de nómina electronica"
+      android:text="@string/label_texto_documento_soporte"
+      android:textStyle="bold"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.851"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.114" />
+      app:layout_constraintVertical_bias="0.114"
+      tools:ignore="TextSizeCheck" />
 
   <TextView
       android:id="@+id/textView4"
       android:layout_width="119dp"
       android:layout_height="24dp"
-      android:text="Periodo de pago:"
+      android:text="@string/label_periodo_pago"
+      android:textColor="@color/black"
+      android:textStyle="bold"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.054"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.198" />
+      app:layout_constraintVertical_bias="0.198"
+      tools:ignore="TextSizeCheck" />
 
   <TextView
       android:id="@+id/textView8"
       android:layout_width="175dp"
       android:layout_height="24dp"
       android:text="FECHA "
+      android:textColor="@color/black"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.605"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.196" />
+      app:layout_constraintVertical_bias="0.198"
+      tools:ignore="HardcodedText,TextSizeCheck" />
 
   <TextView
       android:id="@+id/textView9"
-      android:layout_width="119dp"
+      android:layout_width="150dp"
       android:layout_height="24dp"
-      android:text="Nombre :"
+      android:text="@string/label_nombre_empleado"
+      android:textColor="@color/black"
+      android:textStyle="bold"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.054"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.245" />
+      app:layout_constraintVertical_bias="0.245"
+      tools:ignore="TextSizeCheck" />
 
   <EditText
       android:id="@+id/editTextText"
@@ -103,24 +116,29 @@
       android:layout_height="24dp"
       android:ems="10"
       android:inputType="text"
+      android:textColor="@color/black"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.711"
+      app:layout_constraintHorizontal_bias="0.850"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.244" />
+      app:layout_constraintVertical_bias="0.244"
+      tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
   <TextView
       android:id="@+id/textView10"
-      android:layout_width="119dp"
+      android:layout_width="180dp"
       android:layout_height="24dp"
-      android:text="Identificación :"
+      android:text="@string/label_identificacion_empleado"
+      android:textColor="@color/black"
+      android:textStyle="bold"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.055"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.294" />
+      app:layout_constraintVertical_bias="0.294"
+      tools:ignore="TextSizeCheck" />
 
   <EditText
       android:id="@+id/editTextText2"
@@ -128,12 +146,14 @@
       android:layout_height="24dp"
       android:ems="10"
       android:inputType="text"
+      android:textColor="@color/black"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.583"
+      app:layout_constraintHorizontal_bias="0.697"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.292" />
+      app:layout_constraintVertical_bias="0.292"
+      tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
   <ImageView
       android:id="@+id/imageView2"
@@ -145,19 +165,23 @@
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
       app:layout_constraintVertical_bias="0.027"
-      app:srcCompat="@drawable/logo" />
+      app:srcCompat="@drawable/logo"
+      tools:ignore="ContentDescription" />
 
   <TextView
       android:id="@+id/textView11"
       android:layout_width="110dp"
       android:layout_height="24dp"
-      android:text="Total ingresos"
+      android:text="@string/label_total_ingresos"
+      android:textColor="@color/black"
+      android:textStyle="bold"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.528"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.522" />
+      app:layout_constraintVertical_bias="0.522"
+      tools:ignore="TextSizeCheck" />
 
   <EditText
       android:id="@+id/editTextText4"
@@ -170,19 +194,23 @@
       app:layout_constraintHorizontal_bias="0.918"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="@+id/textView"
-      app:layout_constraintVertical_bias="0.51" />
+      app:layout_constraintVertical_bias="0.51"
+      tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
   <TextView
       android:id="@+id/textView17"
       android:layout_width="wrap_content"
       android:layout_height="24dp"
-      android:text="Total deducciones"
+      android:text="@string/label_total_deducciones"
+      android:textColor="@color/black"
+      android:textStyle="bold"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.753"
+      app:layout_constraintHorizontal_bias="0.537"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.898" />
+      app:layout_constraintVertical_bias="0.894"
+      tools:ignore="TextSizeCheck" />
 
   <EditText
       android:id="@+id/editTextText5"
@@ -190,51 +218,61 @@
       android:layout_height="24dp"
       android:ems="10"
       android:inputType="text"
+      android:textColor="@color/black"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.958"
+      app:layout_constraintHorizontal_bias="0.963"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.895" />
+      app:layout_constraintVertical_bias="0.892"
+      tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
   <TextView
       android:id="@+id/textView18"
       android:layout_width="wrap_content"
       android:layout_height="24dp"
-      android:text="NETO A PAGAR"
+      android:text="@string/label_neto_pagar"
+      android:textColor="@color/black"
+      android:textStyle="bold"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.647"
+      app:layout_constraintHorizontal_bias="0.481"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.983" />
+      app:layout_constraintVertical_bias="0.982"
+      tools:ignore="TextSizeCheck" />
 
   <EditText
       android:id="@+id/editTextText6"
-      android:layout_width="169dp"
+      android:layout_width="110dp"
       android:layout_height="24dp"
       android:ems="10"
       android:inputType="text"
+      android:textColor="@color/black"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.953"
+      app:layout_constraintHorizontal_bias="0.963"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.986" />
+      app:layout_constraintVertical_bias="0.981"
+      tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
   <TextView
       android:id="@+id/textView5"
       android:layout_width="371dp"
       android:layout_height="24dp"
-      android:gravity="center"
-      android:text="INGRESOS"
       android:background="#45A4EF"
+      android:gravity="center"
+      android:text="@string/label_ingresos"
+      android:textColor="@color/black"
+      android:textStyle="bold"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.4"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.344" />
+      app:layout_constraintVertical_bias="0.344"
+      tools:ignore="TextSizeCheck" />
 
   <TextView
       android:id="@+id/textView6"
@@ -253,13 +291,15 @@
       android:layout_height="23dp"
       android:background="#C8E0F3"
       android:gravity="center"
-      android:text="Concepto "
+      android:text="@string/label_concepto"
+      android:textColor="@color/black"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.059"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.38" />
+      app:layout_constraintVertical_bias="0.38"
+      tools:ignore="TextSizeCheck" />
 
   <EditText
       android:id="@+id/editTextText3"
@@ -267,13 +307,14 @@
       android:layout_height="23dp"
       android:ems="10"
       android:inputType="text"
-      android:text="Name"
+      android:text=""
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.918"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.415" />
+      app:layout_constraintVertical_bias="0.415"
+      tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
   <TextView
       android:id="@+id/textView12"
@@ -292,13 +333,15 @@
       android:layout_height="22.5dp"
       android:background="#C8E0F3"
       android:gravity="center"
-      android:text="Valor"
+      android:text="@string/label_valor"
+      android:textColor="@color/black"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.920"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.381" />
+      app:layout_constraintVertical_bias="0.381"
+      tools:ignore="TextSizeCheck" />
 
   <TextView
       android:id="@+id/textView15"
@@ -317,13 +360,14 @@
       android:layout_height="23dp"
       android:ems="10"
       android:inputType="text"
-      android:text="Name"
+      android:text=""
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.918"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.451" />
+      app:layout_constraintVertical_bias="0.451"
+      tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
   <EditText
       android:id="@+id/editTextText8"
@@ -331,13 +375,14 @@
       android:layout_height="23dp"
       android:ems="10"
       android:inputType="text"
-      android:text="Name"
+      android:text=""
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.918"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.487" />
+      app:layout_constraintVertical_bias="0.487"
+      tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
   <TextView
       android:id="@+id/textView16"
@@ -376,13 +421,17 @@
       android:id="@+id/textView22"
       android:layout_width="371dp"
       android:layout_height="24dp"
-      android:text="DEDUCCIONES"
-      android:gravity="center"
       android:background="#45A4EF"
+      android:gravity="center"
+      android:text="@string/label_deducciones"
+      android:textColor="@color/black"
+      android:textStyle="bold"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.4"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.604" />
+      app:layout_constraintVertical_bias="0.603"
+      tools:ignore="TextSizeCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
