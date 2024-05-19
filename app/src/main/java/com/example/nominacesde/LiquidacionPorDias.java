@@ -78,7 +78,20 @@ public class LiquidacionPorDias extends AppCompatActivity {
         },dia,mes,ano);
         dpd.show();
     }
-
+    public void abrirCalendarioFechaFinal(View view) {
+        Calendar cal = Calendar.getInstance();
+        int ano = cal.get(Calendar.YEAR);
+        int mes = cal.get(Calendar.MONTH);
+        int dia = cal.get(Calendar.DAY_OF_MONTH);
+        DatePickerDialog dpd = new DatePickerDialog(LiquidacionPorDias.this, new DatePickerDialog.OnDateSetListener() {
+            @Override
+            public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+                String fecha = dayOfMonth + "/" + (month + 1) + "/"  + year;
+                tv.setText(fecha);
+            }
+        },dia,mes,ano);
+        dpd.show();
+    }
     public void liquidacionTiempoCompleto(View view) {
         Intent lqTiempoCompleto = new Intent(LiquidacionPorDias.this, LiquidacionTiempoCompleto.class);
         startActivity(lqTiempoCompleto);

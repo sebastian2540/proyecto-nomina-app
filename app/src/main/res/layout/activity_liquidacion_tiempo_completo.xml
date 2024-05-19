@@ -159,7 +159,7 @@
         android:layout_width="170dp"
         android:layout_height="40dp"
         android:backgroundTint="@color/white"
-        android:onClick="abrirCalendario"
+        android:onClick="abrirCalendarioFechaFinal"
         android:text="@string/button_fecha_defecto"
         android:textColor="#A8000000"
         app:cornerRadius="10dp"
