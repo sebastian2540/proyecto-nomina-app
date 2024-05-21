@@ -38,7 +38,7 @@
 
     <Button
         android:id="@+id/GuardarEmpleado"
-        android:layout_width="100dp"
+        android:layout_width="105dp"
         android:layout_height="45dp"
         android:backgroundTint="#4CAF50"
         android:text="@string/button_guardar_empleado"
@@ -54,7 +54,7 @@
 
     <Button
         android:id="@+id/CancelarEmpleado"
-        android:layout_width="100dp"
+        android:layout_width="105dp"
         android:layout_height="45dp"
         android:backgroundTint="#F44336"
         android:text="@string/button_cancelar_empleado"
@@ -116,96 +116,205 @@
         app:layout_constraintVertical_bias="0.158"
         tools:ignore="TouchTargetSizeCheck" />
 
-    <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="450dp"
-        android:orientation="vertical"
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.050"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.66">
+        app:layout_constraintVertical_bias="0.240">
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_identificacion_empleado"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_identificacion"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/input_identificacion" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.240">
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_nombre_empleado"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_nombre_empleado"
+            android:inputType="textCapSentences" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/input_nombre_empleado" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.050"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.330">
 
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_apellido_empleado"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_apellido_empleado"
+            android:inputType="textCapSentences" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/input_apellido_empleado" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.330">
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_email_empleado"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_email_empleado"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:hint="@string/input_email_empleado" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.050"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.420">
 
-                        <com.google.android.material.textfield.TextInputLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_cargo_empleado"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_cargo_empleado"
+            android:inputType="textCapSentences" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="@string/input_cargo_empleado" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.420">
 
-                            <com.google.android.material.textfield.TextInputLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_area_empleado"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_area_empleado"
+            android:inputType="textCapSentences" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-                                <com.google.android.material.textfield.TextInputEditText
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:hint="hint" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.050"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.510">
 
-                                <com.google.android.material.textfield.TextInputLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_tipo_contrato_empleado"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_tipo_contrato_empleado"
+            android:inputType="textCapSentences" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-                                    <com.google.android.material.textfield.TextInputEditText
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:hint="@string/input_rol_empleado" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.510">
 
-                                    <com.google.android.material.textfield.TextInputLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_tipo_salario_empleado"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_tipo_salario_empleado"
+            android:inputType="textCapSentences" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-                                        <com.google.android.material.textfield.TextInputEditText
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:hint="@string/input_area_empleado" />
-                                    </com.google.android.material.textfield.TextInputLayout>
-                                </com.google.android.material.textfield.TextInputLayout>
-                            </com.google.android.material.textfield.TextInputLayout>
-                        </com.google.android.material.textfield.TextInputLayout>
-                    </com.google.android.material.textfield.TextInputLayout>
-                </com.google.android.material.textfield.TextInputLayout>
-            </com.google.android.material.textfield.TextInputLayout>
-        </com.google.android.material.textfield.TextInputLayout>
-    </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.050"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.600">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_salario_empleado"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_salario_empleado"
+            android:inputType="numberDecimal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.600">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_rol_empleado"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_rol_empleado"
+            android:inputType="textCapSentences" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.050"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.710">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_contrasena_empleado"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_contrasena_empleado"
+            android:inputType="numberPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,96 +7,45 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/ImageLogo"
-        android:layout_width="288dp"
-        android:layout_height="160dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.12"
-        app:srcCompat="@drawable/logo"
-        tools:ignore="ContentDescription" />
-
-    <EditText
-        android:id="@+id/InputUsuario"
-        android:layout_width="380dp"
-        android:layout_height="51dp"
-        android:ems="10"
-        android:hint="@string/input_usuario"
-        android:inputType="number"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.484"
-        tools:ignore="Autofill,SpUsage,TextContrastCheck,TextSizeCheck" />
-
-    <EditText
-        android:id="@+id/InputContrasena"
-        android:layout_width="380dp"
-        android:layout_height="50dp"
-        android:ems="10"
-        android:hint="@string/input_contrasena"
-        android:importantForAutofill="no"
-        android:inputType="numberPassword"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.597"
-        tools:ignore="TextContrastCheck,TextSizeCheck" />
-
     <Button
-        android:id="@+id/ButtonIngresar"
-        android:layout_width="379dp"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#049947"
-        android:text="@string/button_ingresar"
-        android:textColor="@color/black"
-        android:textFontWeight="@integer/material_motion_duration_long_2"
-        android:textSize="20dp"
-        app:cornerRadius="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.725"/>
-
-    <TextView
-        android:id="@+id/LabelOlvidasteContrasena"
+        android:id="@+id/continuar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/label_olvidaste_contrasena"
+        android:backgroundTint="#FFC107"
+        android:text="Continuar"
         android:textColor="@color/black"
         android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.832"
-        tools:ignore="SpUsage,TextSizeCheck" />
-
-    <TextView
-        android:id="@+id/LabelInicioSesion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/label_inicio"
-        android:textColor="@color/black"
         android:textStyle="bold"
-        android:textFontWeight="@integer/material_motion_duration_long_2"
-        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.856" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/nomina_home" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.376"
-        tools:ignore="SpUsage,TextSizeCheck" />
-
-
-
+        app:layout_constraintVertical_bias="0.133" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+

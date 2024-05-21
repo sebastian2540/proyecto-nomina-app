@@ -12,8 +12,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView usuario, contrasena;
-    Button ingresar;
+
+    Button btningresar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,21 +21,14 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-        usuario = findViewById(R.id.InputUsuario);
-        contrasena = findViewById(R.id.InputContrasena);
-        ingresar = findViewById(R.id.ButtonIngresar);
+        btningresar = findViewById(R.id.continuar);
 
-        ingresar.setOnClickListener(new View.OnClickListener() {
+        btningresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                VerLogin verificar = new VerLogin(usuario.getText().toString(), contrasena.getText().toString());
-                if (verificar.validacionUsuario() == 1) {
-                    Toast.makeText(MainActivity.this, "Bienvenido", Toast.LENGTH_SHORT).show();
-                    Intent seguir = new Intent(MainActivity.this, Menu.class);
-                    startActivity(seguir);
-                } else {
-                    Toast.makeText(MainActivity.this, "Usuario y Contraseña incorrecto", Toast.LENGTH_SHORT).show();
-                }
+                Intent continuar = new Intent(MainActivity.this, Login.class);
+                startActivity(continuar);
+                Toast.makeText(getApplicationContext(), "Ha presionado el boton continuar", Toast.LENGTH_SHORT).show();
             }
         });
     }

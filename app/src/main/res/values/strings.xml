@@ -1,6 +1,6 @@
 <resources>
     <!--Inicio sesion-->
-    <string name="app_name">Nomina Cesde</string>
+    <string name="app_name">Nomina App</string>
     <string name="label_inicio">Inicio de sesión</string>
     <string name="input_usuario">Usuario</string>
     <string name="input_contrasena">Contraseña</string>
@@ -34,11 +34,11 @@
     <string name="edittext_salario_diario_defecto">43333</string>
     <string name="edittext_dias_defecto">48</string>
     <string name="button_guardar_liquidacion">Guardar</string>
-    <string name="button_cancelar_liquidacion">Canelar</string>
+    <string name="button_cancelar_liquidacion">Cancelar</string>
     <!--Empleado-->
     <string name="label_empleado">Empleado</string>
     <string name="button_guardar_empleado">Guardar</string>
-    <string name="button_cancelar_empleado">Canelar</string>
+    <string name="button_cancelar_empleado">Cancelar</string>
     <string name="button_editar">Editar</string>
     <string name="button_borrar">Borrar</string>
     <string name="button_activar">Estado</string>
@@ -47,9 +47,12 @@
     <string name="input_apellido_empleado">Apellido</string>
     <string name="input_email_empleado">Email</string>
     <string name="input_cargo_empleado">Cargo</string>
-    <string name="input_rol_empleado">Rol</string>
     <string name="input_area_empleado">Área</string>
-
+    <string name="input_tipo_contrato_empleado">Tipo Contrato</string>
+    <string name="input_tipo_salario_empleado">Tipo Salario</string>
+    <string name="input_salario_empleado">Salario</string>"
+    <string name="input_rol_empleado">Rol</string>
+    <string name="input_contrasena_empleado">Contraseña</string>
 
 
     <!--Area-->

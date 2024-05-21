@@ -1,0 +1,120 @@
+[33mcommit 7cdd9b60aeb64c0b7057b7a8cabf08e8fb41977b[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: DayanaHernandez <dayanahernandezhincapie@gmail.com>
+Date:   Sun May 19 17:55:49 2024 -0500
+
+    Se organiza evento de boton de la fecha final de las liquidaciones y se finaliza colilla de pago
+
+[33mcommit aaa39479fecf6bed3f406690178c183ad5148fa2[m
+Author: Sebastian Villada Jaramillo <sebastian.villada.jaramillo@gmail.com>
+Date:   Fri May 17 19:16:35 2024 -0500
+
+    [CONFIG] se realizan configuraciones generales en el proyecto
+
+[33mcommit a3035a6e247c3f37318c28f20022023f24ef1e1a[m
+Author: DayanaHernandez <dayanahernandezhincapie@gmail.com>
+Date:   Thu May 16 21:42:32 2024 -0500
+
+    Se modifico las vistas de liquidacion tiempo completo y por dias, se inicio la colilla
+
+[33mcommit dee755ab4ea1447430996e6a4cd8c149b866391d[m
+Author: Sebastian Villada Jaramillo <sebastian.villada.jaramillo@gmail.com>
+Date:   Thu May 16 00:27:07 2024 -0500
+
+    [MODIFY] se realizan modificaciones en la vista de menu, liquidacion y se comienza con el diseño de la vista de empleado
+
+[33mcommit 85d706fdc129fcd37062f6a9468d019913caf758[m
+Author: Sebastian Villada Jaramillo <sebastian.villada.jaramillo@gmail.com>
+Date:   Tue May 14 23:12:46 2024 -0500
+
+    [CONFIG] se realizan configuraciones en el proyecto y adaptaciones para la funcionalidad
+
+[33mcommit edb1f469e34f629ba874e0a3fe13d44d35967602[m
+Author: DayanaHernandez <dayanahernandezhincapie@gmail.com>
+Date:   Mon May 13 19:18:32 2024 -0500
+
+    Se realizo colilla de pago
+
+[33mcommit 71d9dc4df03e60c636f6262ee998b4149634cdbd[m
+Author: Sebastian Villada Jaramillo <sebastian.villada.jaramillo@gmail.com>
+Date:   Sat May 11 19:32:09 2024 -0500
+
+    [ADD] se agrega la vista de Area y Empleado para comenzar con el diseño [CONFIG] se configura el direccionamiento a las distintas ventanas y el comienzo de la configuración del botón menu
+
+[33mcommit e5a1022b0d3db57f91fe17a61acf61590805a44f[m
+Author: DayanaHernandez <dayanahernandezhincapie@gmail.com>
+Date:   Wed May 8 20:44:12 2024 -0500
+
+    Se actualizo la clase VerLogin y Menu
+
+[33mcommit e6affde1b038694f26b2efead73fec8896981232[m
+Author: DayanaHernandez <dayanahernandezhincapie@gmail.com>
+Date:   Wed May 8 19:22:21 2024 -0500
+
+    [CONFIG] configuraciones en cada clase
+
+[33mcommit 05fc52d679e24e8daa9c32469eb1a275ab1c978d[m
+Merge: 2f5ba86 09c8fa3
+Author: DayanaHernandez <dayanahernandezhincapie@gmail.com>
+Date:   Wed May 8 19:15:44 2024 -0500
+
+    [ADD] se realizan ajustes de liquidación
+
+[33mcommit 2f5ba868acb8138f175fbdd321cb416b085beaec[m
+Author: DayanaHernandez <dayanahernandezhincapie@gmail.com>
+Date:   Wed Apr 10 19:23:37 2024 -0500
+
+    Actualizar vistas TC,TPD
+
+[33mcommit 09c8fa33f8f23b64b28741c01a29dabb5f0b41ca[m
+Author: Sebastian Villada Jaramillo <sebastian.villada.jaramillo@gmail.com.co>
+Date:   Mon Apr 1 19:58:00 2024 -0500
+
+    [ADD] implementación de icon app
+
+[33mcommit 9100be0d29c35e12fac37ed1467cc6242e9faaba[m
+Author: Sebastian Villada Jaramillo <sebastian.villada.jaramillo@gmail.com.co>
+Date:   Mon Apr 1 19:29:07 2024 -0500
+
+    [ADD] implementación del menu
+
+[33mcommit 633d2361ab51f8aa7d591a6dd9c10e266a95dfe8[m
+Author: Sebastian Villada Jaramillo <sebastian.villada.jaramillo@gmail.com.co>
+Date:   Mon Apr 1 18:01:45 2024 -0500
+
+    [MODIFY] MainActivity
+
+[33mcommit c1f11ca25463aa4cc232d2d7fffb4ef2f803fe50[m
+Author: Sebastian Villada Jaramillo <sebastian.villada.jaramillo@gmail.com.co>
+Date:   Tue Mar 19 21:11:35 2024 -0500
+
+    [ADD] creación del menu
+
+[33mcommit dcedb54eb2399a6d40466fbc5b2727414d08e8b1[m
+Author: Sebastian Villada Jaramillo <sebastian.villada.jaramillo@gmail.com.co>
+Date:   Mon Mar 18 23:08:17 2024 -0500
+
+    [MODIFY] LabelOlvidasteContrasena
+
+[33mcommit 0248276ef6fe494a15f6b33efc4c87014d436e5e[m
+Author: Sebastian Villada Jaramillo <sebastian.villada.jaramillo@gmail.com.co>
+Date:   Mon Mar 18 23:01:08 2024 -0500
+
+    [MODIFY] LabelOlvidasteContrasena
+
+[33mcommit 3d026a4b4e4e5ed9e666e6635e81238200c8a242[m
+Author: DayanaHernandez <dayanahernandezhincapie@gmail.com>
+Date:   Mon Mar 18 22:54:06 2024 -0500
+
+    prueba
+
+[33mcommit 93a6ca5d5900fcf7d5864c73d6d9c9254aba69e4[m
+Author: Sebastian Villada Jaramillo <sebastian.villada.jaramillo@gmail.com.co>
+Date:   Mon Mar 18 17:10:58 2024 -0500
+
+    [MODIFY] inputUsuario
+
+[33mcommit 802f06f0f0552f9cfb69714be0abc633770e0085[m
+Author: Sebastian Villada Jaramillo <sebastian.villada.jaramillo@gmail.com.co>
+Date:   Mon Mar 18 16:59:07 2024 -0500
+
+    [ADD] proyecto nomina

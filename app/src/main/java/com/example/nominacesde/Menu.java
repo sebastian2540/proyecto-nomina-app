@@ -56,7 +56,7 @@ public class Menu extends AppCompatActivity implements View.OnClickListener{
     }
 
     public void cerrarSesion(View view) {
-        Intent cerrarSesion = new Intent(Menu.this, MainActivity.class);
+        Intent cerrarSesion = new Intent(Menu.this, Login.class);
         startActivity(cerrarSesion);
         Toast.makeText(getApplicationContext(), "Ha presionado el boton cerrar sesión", Toast.LENGTH_SHORT).show();
     }
