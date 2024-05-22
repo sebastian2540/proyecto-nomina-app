@@ -16,7 +16,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class Login extends AppCompatActivity {
 
     TextView usuario, contrasena;
-    Button ingresar;
+    Button ingresar, restablecerContrasena;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +25,9 @@ public class Login extends AppCompatActivity {
         usuario = findViewById(R.id.InputUsuario);
         contrasena = findViewById(R.id.InputContrasena);
         ingresar = findViewById(R.id.ButtonIngresar);
+
+        restablecerContrasena = (Button) findViewById(R.id.ButtonOlvidasteContrasena);
+        restablecerContrasena.setOnClickListener(this::resturarContraseña);
 
         ingresar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,5 +42,10 @@ public class Login extends AppCompatActivity {
                 }
             }
         });
+    }
+    public void resturarContraseña(View view) {
+        Intent restaurar = new Intent(Login.this, RestaurarContrasena.class);
+        startActivity(restaurar);
+        Toast.makeText(getApplicationContext(), "Ha presionado el boton restaurar contraseña", Toast.LENGTH_SHORT).show();
     }
 }
