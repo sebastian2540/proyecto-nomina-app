@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "558143535516",
+    "project_id": "nomina-cesde-3ea5a",
+    "storage_bucket": "nomina-cesde-3ea5a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:558143535516:android:ad4318b1224427cd1af059",
+        "android_client_info": {
+          "package_name": "com.example.nominacesde"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPTDBKAYTYpfE_JD0WaDbKq_U0v3EG20k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
