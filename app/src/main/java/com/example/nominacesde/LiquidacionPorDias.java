@@ -22,7 +22,7 @@ import androidx.core.view.WindowInsetsCompat;
 import java.util.Calendar;
 
 public class LiquidacionPorDias extends AppCompatActivity {
-    TextView tv;
+    TextView tvFechaInicial, tvFechaFinal;
     Spinner listas;
     String[] datos = {"Seleccione Empleado","Dayana Hernandez", "Luisa Rojas Metaute", "Sebastian Villada", "Susana Villa"};
     Button btnTiempoCompleto, btnColillaEmpleado;
@@ -35,7 +35,7 @@ public class LiquidacionPorDias extends AppCompatActivity {
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            tv = findViewById(R.id.fechaIngreso);
+            tvFechaInicial = findViewById(R.id.fechaIngreso);
             listas = (Spinner)findViewById(R.id.lista_por_dias);
 
             btnTiempoCompleto = (Button) findViewById(R.id.botonTiempoCompleto);
@@ -73,7 +73,7 @@ public class LiquidacionPorDias extends AppCompatActivity {
             @Override
             public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
                 String fecha = dayOfMonth + "/" + month + "/"  + year;
-                tv.setText(fecha);
+                tvFechaInicial.setText(fecha);
             }
         },dia,mes,ano);
         dpd.show();
@@ -87,7 +87,7 @@ public class LiquidacionPorDias extends AppCompatActivity {
             @Override
             public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
                 String fecha = dayOfMonth + "/" + (month + 1) + "/"  + year;
-                tv.setText(fecha);
+                tvFechaFinal.setText(fecha);
             }
         },dia,mes,ano);
         dpd.show();

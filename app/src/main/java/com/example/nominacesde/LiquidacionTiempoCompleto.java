@@ -20,9 +20,11 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import java.util.Calendar;
+import java.util.Locale;
+
 
 public class LiquidacionTiempoCompleto extends AppCompatActivity {
-    TextView tv;
+    TextView tvFechaInicial, tvFechaFinal;
     Spinner listas;
     String[] datos = {"Seleccione Empleado","Dayana Hernandez", "Luisa Rojas Metaute", "Sebastian Villada", "Susana Villa"};
     Button btnPorDias, btnColillaEmpleado;
@@ -35,7 +37,8 @@ public class LiquidacionTiempoCompleto extends AppCompatActivity {
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            tv = findViewById(R.id.fechaIngreso);
+            tvFechaInicial = findViewById(R.id.fechaIngreso);
+            tvFechaFinal = findViewById(R.id.fechaFinal);
             listas = (Spinner)findViewById(R.id.lista_tiempo_completo);
 
             btnPorDias = (Button) findViewById(R.id.botonPorDias);
@@ -69,11 +72,14 @@ public class LiquidacionTiempoCompleto extends AppCompatActivity {
         int ano = cal.get(Calendar.YEAR);
         int mes = cal.get(Calendar.MONTH);
         int dia = cal.get(Calendar.DAY_OF_MONTH);
+
+        Locale spanish = new Locale("es", "ES");
+        Locale.setDefault(spanish);
         DatePickerDialog dpd = new DatePickerDialog(LiquidacionTiempoCompleto.this, new DatePickerDialog.OnDateSetListener() {
             @Override
             public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
                 String fecha = dayOfMonth + "/" + (month + 1) + "/"  + year;
-                tv.setText(fecha);
+                tvFechaInicial.setText(fecha);
             }
         },dia,mes,ano);
         dpd.show();
@@ -83,11 +89,14 @@ public class LiquidacionTiempoCompleto extends AppCompatActivity {
         int ano = cal.get(Calendar.YEAR);
         int mes = cal.get(Calendar.MONTH);
         int dia = cal.get(Calendar.DAY_OF_MONTH);
+
+        Locale spanish = new Locale("es", "ES");
+        Locale.setDefault(spanish);
         DatePickerDialog dpd = new DatePickerDialog(LiquidacionTiempoCompleto.this, new DatePickerDialog.OnDateSetListener() {
             @Override
             public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
                 String fecha = dayOfMonth + "/" + (month + 1) + "/"  + year;
-                tv.setText(fecha);
+                tvFechaFinal.setText(fecha);
             }
         },dia,mes,ano);
         dpd.show();
