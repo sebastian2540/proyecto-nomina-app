@@ -16,7 +16,7 @@ import com.example.nominacesde.LiquidacionTiempoCompleto;
 
 public class Menu extends AppCompatActivity implements View.OnClickListener{
 
-   Button btnLiquidacion, btnEmpleado, btnArea, btnCerrarSesion;
+   Button btnLiquidacion, btnEmpleado, btnArea, btnCerrarSesion, btnInstrucciones;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,8 +33,11 @@ public class Menu extends AppCompatActivity implements View.OnClickListener{
         btnLiquidacion = (Button) findViewById(R.id.ButtonLiquidacion);
         btnLiquidacion.setOnClickListener(this);
 
-        btnArea = (Button) findViewById(R.id.ButtonCerrarSesion);
-        btnArea.setOnClickListener(this::cerrarSesion);
+        btnCerrarSesion = (Button) findViewById(R.id.ButtonCerrarSesion);
+        btnCerrarSesion.setOnClickListener(this::cerrarSesion);
+
+        btnInstrucciones = (Button) findViewById(R.id.ButtonInstrucciones);
+        btnInstrucciones.setOnClickListener(this::instrucciones);
     }
     @Override
     public void onClick(View v) {
@@ -60,6 +63,14 @@ public class Menu extends AppCompatActivity implements View.OnClickListener{
         startActivity(cerrarSesion);
         Toast.makeText(getApplicationContext(), "Ha presionado el boton cerrar sesión", Toast.LENGTH_SHORT).show();
     }
+
+    public void instrucciones(View view) {
+        Intent instrucciones = new Intent(Menu.this, Instrucciones.class);
+        startActivity(instrucciones);
+        Toast.makeText(getApplicationContext(), "Ha presionado el boton instrucciones", Toast.LENGTH_SHORT).show();
+    }
+
+
 
 
 }

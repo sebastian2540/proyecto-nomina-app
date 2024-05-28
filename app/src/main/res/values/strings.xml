@@ -18,7 +18,7 @@
     <string name="nombre_usuario">Juan Camilo Sanchez Perez</string>
     <string name="cargo_usuario">Administrador</string>
     <string name="area_usuario">Nómina</string>
-    <string name="instrucciones">Instrucciones</string>
+    <string name="button_instrucciones">Instrucciones</string>
     <string name="button_empleado">Empleado</string>
     <string name="button_area">Área</string>
     <string name="button_liquidacion">Liquidación</string>
@@ -65,7 +65,7 @@
     <string name="input_contrasena_empleado">Contraseña</string>
 
     <!--Instrucciones-->
-    <string name="label_manual_instrucciones">Instrucciones Mi Calculadora</string>
+    <string name="label_manual_instrucciones">Instrucciones Nomina App</string>
 
     <!--Area-->
     <string name="label_area">Área</string>

@@ -127,19 +127,21 @@
         app:layout_constraintVertical_bias="0.826"
         tools:ignore="SpUsage" />
 
-    <TextView
-        android:id="@+id/instrucciones"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/instrucciones"
+    <Button
+        android:id="@+id/ButtonInstrucciones"
+        android:layout_width="165dp"
+        android:layout_height="45dp"
+        android:backgroundTint="#00431919"
+        android:text="@string/button_instrucciones"
         android:textColor="@color/black"
         android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.903"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.051" />
+        app:layout_constraintVertical_bias="0.038"
+        tools:ignore="SpUsage,TextSizeCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

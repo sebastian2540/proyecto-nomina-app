@@ -86,8 +86,8 @@
 
     <Button
         android:id="@+id/BorrarEmpleado"
-        android:layout_width="100dp"
-        android:layout_height="40dp"
+        android:layout_width="102dp"
+        android:layout_height="44dp"
         android:backgroundTint="#F44336"
         android:text="@string/button_borrar"
         android:textColor="@color/black"
@@ -279,6 +279,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout3"
         android:layout_width="180dp"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -15,6 +15,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class Empleado extends AppCompatActivity {
 
     ImageButton btnMenu;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
