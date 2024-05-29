@@ -25,15 +25,18 @@
     <string name="button_cerrarsesion">Cerrar Sesión</string>
 
     <!--Liquidación-->
-    <string name="label_liquidacion">Liquidación</string>
+    <string name="label_liquidacion_tiempo_completo">Liquidación Tiempo Completo</string>
+    <string name="label_liquidacion_por_dias">Liquidación por Días</string>
     <string name="button_liquidacion_tiempo_completo">Liquidación Tiempo Completo</string>
     <string name="button_liquidacion_por_dias">Liquidación por Días</string>
     <string name="label_fecha_inicio_liquidar">1. FECHA DE INICIO DEL PERIODO A LIQUIDAR</string>
     <string name="label_fecha_final_liquidar">2. FECHA DE FINAL DEL PERIODO A LIQUIDAR</string>
     <string name="label_salario">3. INGRESE SU SALARIO MENSUAL</string>
     <string name="label_dias_laborados_semana">4. DIAS LABORADOS SEMANA</string>
-    <string name="label_auxilio_transporte_dias">5. ¿TIENE DERECHO A UN AUXILIO DE TRANSPORTE?</string>
-    <string name="label_auxilio_transporte">4. ¿TIENE DERECHO A UN AUXILIO DE TRANSPORTE?</string>
+    <string name="label_auxilio_transporte_dias">5. ¿TIENE DERECHO A AUXILIO DE TRANSPORTE?</string>
+    <string name="label_auxilio_transporte">4. ¿TIENE DERECHO A AUXILIO DE TRANSPORTE?</string>
+    <string name="edittext_auxilio_trabajo">162000</string>
+    <string name="edittext_auxilio_trabajo_por_dias">5400</string>
     <string name="label_clase">5. Seleccione la clase de riesgos laborales correspondiente al sector de actividad y al cargo del trabajador.</string>
     <string name="label_clase_dias">6. Seleccione la clase de riesgos laborales correspondiente al sector de actividad y al cargo del trabajador.</string>
     <string name="button_liquidacion_para_empleado">Liquidación para Empleado</string>

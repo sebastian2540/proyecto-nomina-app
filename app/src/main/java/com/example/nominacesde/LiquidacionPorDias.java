@@ -7,7 +7,9 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.DatePicker;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -27,6 +29,8 @@ public class LiquidacionPorDias extends AppCompatActivity {
     String[] datos = {"Seleccione Empleado","Dayana Hernandez", "Luisa Rojas Metaute", "Sebastian Villada", "Susana Villa"};
     Button btnTiempoCompleto, btnColillaEmpleado;
     ImageButton btnMenu;
+    private CheckBox checkboxAuxilioTransporte;
+    private EditText editTextAuxilioTransporte;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,6 +51,9 @@ public class LiquidacionPorDias extends AppCompatActivity {
             btnColillaEmpleado = (Button) findViewById(R.id.liquidacionEmpleado);
             btnColillaEmpleado.setOnClickListener(this::colillaEmpleado);
 
+            checkboxAuxilioTransporte = findViewById(R.id.checkboxAuxilioTransporte);
+            editTextAuxilioTransporte = findViewById(R.id.editTextAuxilioTransporte);
+
             ArrayAdapter<String> adaptador= new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item,datos);
             listas.setAdapter(adaptador);
             listas.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -60,6 +67,18 @@ public class LiquidacionPorDias extends AppCompatActivity {
 
                 }
             });
+
+            checkboxAuxilioTransporte.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (checkboxAuxilioTransporte.isChecked()) {
+                        editTextAuxilioTransporte.setVisibility(View.VISIBLE);
+                    } else {
+                        editTextAuxilioTransporte.setVisibility(View.GONE);
+                    }
+                }
+            });
+
             return insets;
         });
     }
