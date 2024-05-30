@@ -135,4 +135,9 @@ public class LiquidacionPorDias extends AppCompatActivity {
         startActivity(colillaNomimaEmpleado);
         Toast.makeText(getApplicationContext(), "Ha presionado el boton liquidacion para empleado", Toast.LENGTH_SHORT).show();
     }
+
+    @Override
+    public void onBackPressed() {
+
+    }
 }

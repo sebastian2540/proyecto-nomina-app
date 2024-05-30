@@ -70,7 +70,8 @@ public class Menu extends AppCompatActivity implements View.OnClickListener{
         Toast.makeText(getApplicationContext(), "Ha presionado el boton instrucciones", Toast.LENGTH_SHORT).show();
     }
 
+    @Override
+    public void onBackPressed() {
 
-
-
+    }
 }

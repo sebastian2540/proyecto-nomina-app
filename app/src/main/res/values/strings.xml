@@ -50,8 +50,8 @@
 
     <!--Empleado-->
     <string name="label_empleado">Empleado</string>
-    <string name="button_guardar_empleado">Guardar</string>
-    <string name="button_cancelar_empleado">Cancelar</string>
+    <string name="button_guardar">Guardar</string>
+    <string name="button_cancelar">Cancelar</string>
     <string name="button_editar">Editar</string>
     <string name="button_borrar">Borrar</string>
     <string name="button_activar">Estado</string>
@@ -72,6 +72,8 @@
 
     <!--Area-->
     <string name="label_area">Área</string>
+    <string name="input_codigo_area">Código Área</string>
+    <string name="input_nombre_area">Nombre Área</string>
 
 
     <!--Colilla-->
