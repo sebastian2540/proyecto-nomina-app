@@ -1,7 +1,9 @@
 package com.example.nominacesde;
 
 import android.app.DatePickerDialog;
+import java.time.format.DateTimeFormatter;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -16,12 +18,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import java.util.Calendar;
+import java.time.LocalDate;
 import java.util.Locale;
 
 
@@ -86,23 +89,36 @@ public class LiquidacionTiempoCompleto extends AppCompatActivity {
         });
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     public void abrirCalendario(View view) {
-        Calendar cal = Calendar.getInstance();
-        int ano = cal.get(Calendar.YEAR);
-        int mes = cal.get(Calendar.MONTH);
-        int dia = cal.get(Calendar.DAY_OF_MONTH);
+
+        LocalDate fechaInicial = LocalDate.of(2024, 1, 1);
+
+        int ano = fechaInicial.getYear();
+        int mes = fechaInicial.getMonthValue() - 1;
+        int dia = fechaInicial.getDayOfMonth();
 
         Locale spanish = new Locale("es", "ES");
         Locale.setDefault(spanish);
+
         DatePickerDialog dpd = new DatePickerDialog(LiquidacionTiempoCompleto.this, new DatePickerDialog.OnDateSetListener() {
             @Override
             public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
-                String fecha = dayOfMonth + "/" + (month + 1) + "/"  + year;
-                tvFechaInicial.setText(fecha);
+                // Crear una fecha con los valores seleccionados
+                LocalDate fechaSeleccionada = LocalDate.of(year, month + 1, dayOfMonth);
+
+                // Formatear la fecha a cadena en formato "d/M/yyyy"
+                DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d/M/yyyy");
+                String fechaFormateada = fechaSeleccionada.format(formatter);
+
+                // Establecer la fecha en el TextView
+                tvFechaInicial.setText(fechaFormateada);
             }
-        },dia,mes,ano);
+        }, ano, mes, dia);
         dpd.show();
     }
+    //Codigo para organizar el calendario
+    /*
     public void abrirCalendarioFechaFinal(View view) {
         Calendar cal = Calendar.getInstance();
         int ano = cal.get(Calendar.YEAR);
@@ -120,6 +136,8 @@ public class LiquidacionTiempoCompleto extends AppCompatActivity {
         },dia,mes,ano);
         dpd.show();
     }
+
+     */
 
     public void liquidacionPorDias(View view) {
         Intent lqPorDias = new Intent(LiquidacionTiempoCompleto.this, LiquidacionPorDias.class);

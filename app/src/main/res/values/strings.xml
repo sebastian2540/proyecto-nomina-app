@@ -31,7 +31,7 @@
     <string name="button_liquidacion_por_dias">Liquidación por Días</string>
     <string name="label_fecha_inicio_liquidar">1. FECHA DE INICIO DEL PERIODO A LIQUIDAR</string>
     <string name="label_fecha_final_liquidar">2. FECHA DE FINAL DEL PERIODO A LIQUIDAR</string>
-    <string name="label_salario">3. INGRESE SU SALARIO MENSUAL</string>
+    <string name="label_salario_mensual">3. INGRESE SU SALARIO MENSUAL</string>
     <string name="label_dias_laborados_semana">4. DIAS LABORADOS SEMANA</string>
     <string name="label_auxilio_transporte_dias">5. ¿TIENE DERECHO A AUXILIO DE TRANSPORTE?</string>
     <string name="label_auxilio_transporte">4. ¿TIENE DERECHO A AUXILIO DE TRANSPORTE?</string>
@@ -77,18 +77,24 @@
     <!--Colilla-->
     <string name="label_info_empresa">INFORMACIÓN EMPRESA</string>
     <string name="label_nit_empresa">NIT EMPRESA</string>
-    <string name="label_texto_documento_soporte">Documento Soporte de Pago de Nómina Electrónica</string>
-    <string name="label_periodo_pago">Periodo de Pago:</string>
-    <string name="label_nombre_empleado">Nombre Empleado:</string>
-    <string name="label_identificacion_empleado">Identificacion Empleado:</string>
-    <string name="label_ingresos">INGRESOS</string>
-    <string name="label_concepto">Concepto</string>
-    <string name="label_cantidad">Cantidad</string>
-    <string name="label_valor">Valor</string>
-    <string name="label_total_ingresos">Total Ingresos</string>
-    <string name="label_deducciones">DEDUCCIONES</string>">
-    <string name="label_total_deducciones">Total Deducciones</string>
-    <string name="label_neto_pagar">Neto a Pagar</string>
+    <string name="label_texto_documento_soporte">Liquidación definitiva de prestaciones sociales</string>
+    <string name="label_datos_liquidacion">DATOS LIQUIDACIÓN</string>
+    <string name="label_periodo_pago">Periodo de Pago</string>
+    <string name="label_dias_trabajados">Dias trabajados</string>
+    <string name="label_salario">Salario</string>
+    <string name="label_transporte">Transporte</string>
+    <string name="label_cesantias">Cesantías</string>
+    <string name="label_intereses_cesantias">Intereses sobre cesantías</string>
+    <string name="label_prima_primer_semestre">Prima primer semestre</string>
+    <string name="label_prima_segundo_semestre">Prima segundo semestre</string>
+    <string name="label_vacaciones">Vacaciones</string>
+    <string name="label_total">TOTAL</string>
+    <string name="_label_nota">Recuerde que si ya pago la prima del semestre anterior debe restarla de este resultado</string>
+    <string name="label_titulo_prestaciones">PRESTACIONES SOCIALES EN LA LIQUIDACIÓN DEL CONTRATO DE TRABAJO</string>
+    <string name="label_explicacion">Liquidación definitiva de contrato de Trabajo. Son los pagos adicionales al salario
+        (cesantías, intereses a las cesantías, prima de servicios y vacaciones) que constituyen beneficios para el
+        empleado cuya finalidad es atender necesidades o cubrir riesgos. Estos valores son los que
+        efectivamente serán recibidos en la liquidación definitiva del contrato de trabajo por un periodo de tiempo determinado.</string>
     <!-- TODO: Remove or change this placeholder text -->
 
 </resources>

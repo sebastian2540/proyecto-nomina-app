@@ -46,7 +46,7 @@
     <EditText
         android:id="@+id/diasTrabajados"
         android:layout_width="170dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/edittext_dias_defecto"
@@ -63,37 +63,38 @@
     <Button
         android:id="@+id/fechaFinal"
         android:layout_width="170dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:backgroundTint="@color/white"
-        android:onClick="abrirCalendario"
+        android:onClick="abrirCalendarioFechaFinal"
         android:text="@string/button_fecha_defecto"
         android:textColor="#A8000000"
-        app:cornerRadius="10dp"
         android:textSize="12dp"
+        app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.933"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.424" />
+        app:layout_constraintVertical_bias="0.424"
+        tools:ignore="TextSizeCheck" />
 
     <Button
         android:id="@+id/fechaIngreso"
         android:layout_width="170dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:backgroundTint="@color/white"
-        android:onClick="abrirCalendarioFechaFinal"
+        android:onClick="abrirCalendario"
         android:text="@string/button_fecha_defecto"
         android:textColor="#A8000000"
-        app:cornerRadius="10dp"
         android:textSize="12dp"
+        app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.933"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.316"
-        tools:ignore="DuplicateSpeakableTextCheck" />
+        tools:ignore="DuplicateSpeakableTextCheck,TextSizeCheck" />
 
     <TextView
         android:id="@+id/auxilioTransporte"

@@ -22,6 +22,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import java.util.Calendar;
+import java.util.Locale;
 
 public class LiquidacionPorDias extends AppCompatActivity {
     TextView tvFechaInicial, tvFechaFinal;
@@ -88,6 +89,9 @@ public class LiquidacionPorDias extends AppCompatActivity {
         int ano = cal.get(Calendar.YEAR);
         int mes = cal.get(Calendar.MONTH);
         int dia = cal.get(Calendar.DAY_OF_MONTH);
+
+        Locale spanish = new Locale("es", "ES");
+        Locale.setDefault(spanish);
         DatePickerDialog dpd = new DatePickerDialog(LiquidacionPorDias.this, new DatePickerDialog.OnDateSetListener() {
             @Override
             public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
@@ -102,6 +106,9 @@ public class LiquidacionPorDias extends AppCompatActivity {
         int ano = cal.get(Calendar.YEAR);
         int mes = cal.get(Calendar.MONTH);
         int dia = cal.get(Calendar.DAY_OF_MONTH);
+
+        Locale spanish = new Locale("es", "ES");
+        Locale.setDefault(spanish);
         DatePickerDialog dpd = new DatePickerDialog(LiquidacionPorDias.this, new DatePickerDialog.OnDateSetListener() {
             @Override
             public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
