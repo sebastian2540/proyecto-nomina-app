@@ -35,4 +35,9 @@ public class Empleado extends AppCompatActivity {
         startActivity(menu);
         Toast.makeText(getApplicationContext(), "Ha presionado el boton menu", Toast.LENGTH_SHORT).show();
     }
+
+    @Override
+    public void onBackPressed() {
+
+    }
 }

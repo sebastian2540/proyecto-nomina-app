@@ -37,4 +37,9 @@ public class RestaurarContrasena extends AppCompatActivity {
         startActivity(inicio);
         Toast.makeText(getApplicationContext(), "Ha presionado el boton inicio", Toast.LENGTH_SHORT).show();
     }
+
+    @Override
+    public void onBackPressed() {
+
+    }
 }

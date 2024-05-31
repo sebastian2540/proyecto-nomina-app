@@ -96,4 +96,9 @@ public class Login extends AppCompatActivity {
         startActivity(restaurar);
         Toast.makeText(getApplicationContext(), "Ha presionado el boton restaurar contraseña", Toast.LENGTH_SHORT).show();
     }
+
+    @Override
+    public void onBackPressed() {
+
+    }
 }
