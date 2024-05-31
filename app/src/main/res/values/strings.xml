@@ -77,12 +77,15 @@
     <!--Colilla-->
     <string name="label_info_empresa">INFORMACIÓN EMPRESA</string>
     <string name="label_nit_empresa">NIT EMPRESA</string>
-    <string name="label_texto_documento_soporte">Liquidación definitiva de prestaciones sociales</string>
+    <string name="label_texto_documento_soporte">LIQUIDACIÓN DEFINITIVA DE PRESTACIONES SOCIALES</string>
     <string name="label_datos_liquidacion">DATOS LIQUIDACIÓN</string>
+    <string name="label_nombre_empleado">Nombre empleado</string>
+    <string name="label_documento_identificacion">Documento identificacion</string>
     <string name="label_periodo_pago">Periodo de Pago</string>
     <string name="label_dias_trabajados">Dias trabajados</string>
     <string name="label_salario">Salario</string>
     <string name="label_transporte">Transporte</string>
+    <string name="label_prestaciones_sociales">PRESTACIONES SOCIALES</string>
     <string name="label_cesantias">Cesantías</string>
     <string name="label_intereses_cesantias">Intereses sobre cesantías</string>
     <string name="label_prima_primer_semestre">Prima primer semestre</string>
@@ -90,11 +93,7 @@
     <string name="label_vacaciones">Vacaciones</string>
     <string name="label_total">TOTAL</string>
     <string name="_label_nota">Recuerde que si ya pago la prima del semestre anterior debe restarla de este resultado</string>
-    <string name="label_titulo_prestaciones">PRESTACIONES SOCIALES EN LA LIQUIDACIÓN DEL CONTRATO DE TRABAJO</string>
-    <string name="label_explicacion">Liquidación definitiva de contrato de Trabajo. Son los pagos adicionales al salario
-        (cesantías, intereses a las cesantías, prima de servicios y vacaciones) que constituyen beneficios para el
-        empleado cuya finalidad es atender necesidades o cubrir riesgos. Estos valores son los que
-        efectivamente serán recibidos en la liquidación definitiva del contrato de trabajo por un periodo de tiempo determinado.</string>
+    <string name="label_prima">Prima</string>
     <!-- TODO: Remove or change this placeholder text -->
 
 </resources>
