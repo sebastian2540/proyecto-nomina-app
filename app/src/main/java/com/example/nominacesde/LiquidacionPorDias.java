@@ -32,7 +32,7 @@ public class LiquidacionPorDias extends AppCompatActivity {
     TextView tvFechaInicial, tvFechaFinal;
     Spinner listas;
     String[] datos = {"Seleccione Empleado","Dayana Hernandez", "Luisa Rojas Metaute", "Sebastian Villada", "Susana Villa"};
-    Button btnTiempoCompleto, btnColillaEmpleado;
+    Button btnTiempoCompleto, btnColillaEmpleado, btnColillaEmpleador;
     ImageButton btnMenu;
     private CheckBox checkboxAuxilioTransporte;
     private EditText editTextAuxilioTransporte;
@@ -55,6 +55,9 @@ public class LiquidacionPorDias extends AppCompatActivity {
 
             btnColillaEmpleado = (Button) findViewById(R.id.liquidacionEmpleado);
             btnColillaEmpleado.setOnClickListener(this::colillaEmpleado);
+
+            btnColillaEmpleador = (Button) findViewById(R.id.liquidacionEmpleador);
+            btnColillaEmpleador.setOnClickListener(this::colillaEmpleador);
 
             checkboxAuxilioTransporte = findViewById(R.id.checkboxAuxilioTransporte);
             editTextAuxilioTransporte = findViewById(R.id.editTextAuxilioTransporte);
@@ -162,6 +165,12 @@ public class LiquidacionPorDias extends AppCompatActivity {
         Intent colillaNomimaEmpleado = new Intent(LiquidacionPorDias.this, PlanillaNomina.class);
         startActivity(colillaNomimaEmpleado);
         Toast.makeText(getApplicationContext(), "Ha presionado el boton liquidacion para empleado", Toast.LENGTH_SHORT).show();
+    }
+
+    public void colillaEmpleador(View view) {
+        Intent colillaNomimaEmpleador = new Intent(LiquidacionPorDias.this, PlanillaLiquidacionEmpleador.class);
+        startActivity(colillaNomimaEmpleador);
+        Toast.makeText(getApplicationContext(), "Ha presionado el boton liquidacion para empleador", Toast.LENGTH_SHORT).show();
     }
 
     @Override

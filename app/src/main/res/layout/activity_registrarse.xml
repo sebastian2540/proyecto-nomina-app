@@ -6,8 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".RestaurarContrasena">
-
+    tools:context=".Registrarse">
 
     <ImageView
         android:id="@+id/imageView"
@@ -26,7 +25,7 @@
         android:id="@+id/label_restablecer_contrasena"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/label_restablecer_contrasena"
+        android:text="@string/label_registrarse"
         android:textColor="@color/black"
         android:textSize="30dp"
         android:textStyle="bold"
@@ -66,7 +65,7 @@
             android:id="@+id/I"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/input_correo_electronico"
+            android:hint="@string/input_correo_electronico_registrarse"
             android:inputType="textAutoComplete"
             tools:ignore="TextContrastCheck" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -75,6 +74,8 @@
         android:id="@+id/textInputLayout2"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.500"
@@ -86,7 +87,7 @@
             android:id="@+id/InputContrasena"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/input_confirmar_correo_electronico"
+            android:hint="@string/input_contrasena_registrarse"
             android:inputType="numberPassword"
             tools:ignore="TextContrastCheck" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -96,7 +97,7 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:backgroundTint="#049947"
-        android:text="@string/button_restablecer_contrasena"
+        android:text="@string/button_registrarse"
         android:textColor="@color/black"
         android:textFontWeight="@integer/material_motion_duration_long_2"
         android:textSize="20dp"
@@ -107,6 +108,5 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.667"
         tools:ignore="SpUsage,TextSizeCheck,UnusedAttribute" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

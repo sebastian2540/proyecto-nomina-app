@@ -15,6 +15,9 @@
         android:theme="@style/Theme.NominaCesde"
         tools:targetApi="31">
         <activity
+            android:name=".Registrarse"
+            android:exported="false" />
+        <activity
             android:name=".PlanillaLiquidacionEmpleador"
             android:exported="false" />
         <activity
