@@ -35,4 +35,5 @@ public class Registrarse extends AppCompatActivity {
         startActivity(inicio);
         Toast.makeText(getApplicationContext(), "Ha presionado el boton inicio", Toast.LENGTH_SHORT).show();
     }
+
 }
