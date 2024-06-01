@@ -121,11 +121,11 @@ public class LiquidacionPorDias extends AppCompatActivity {
     @RequiresApi(api = Build.VERSION_CODES.O)
     public void abrirCalendarioFechaFinal(View view) {
 
-        LocalDate fechaInicial = LocalDate.of(2024, 1, 1);
+        LocalDate fechaFinal = LocalDate.of(2024, 1, 1);
 
-        int ano = fechaInicial.getYear();
-        int mes = fechaInicial.getMonthValue() - 1;
-        int dia = fechaInicial.getDayOfMonth();
+        int ano = fechaFinal.getYear();
+        int mes = fechaFinal.getMonthValue() - 1;
+        int dia = fechaFinal.getDayOfMonth();
 
         Locale spanish = new Locale("es", "ES");
         Locale.setDefault(spanish);
@@ -141,7 +141,7 @@ public class LiquidacionPorDias extends AppCompatActivity {
                 String fechaFormateada = fechaSeleccionada.format(formatter);
 
                 // Establecer la fecha en el TextView
-                tvFechaInicial.setText(fechaFormateada);
+                tvFechaFinal.setText(fechaFormateada);
             }
         }, ano, mes, dia);
         dpd.show();

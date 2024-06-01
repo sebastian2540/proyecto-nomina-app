@@ -32,7 +32,7 @@ public class LiquidacionTiempoCompleto extends AppCompatActivity {
     TextView tvFechaInicial, tvFechaFinal;
     Spinner listas;
     String[] datos = {"Seleccione Empleado","Dayana Hernandez", "Luisa Rojas Metaute", "Sebastian Villada", "Susana Villa"};
-    Button btnPorDias, btnColillaEmpleado;
+    Button btnPorDias, btnColillaEmpleado, btnLiquidacionEmpleador;
     ImageButton btnMenu;
     private CheckBox checkboxAuxilioTransporte;
     private EditText editTextAuxilioTransporte;
@@ -56,6 +56,9 @@ public class LiquidacionTiempoCompleto extends AppCompatActivity {
 
             btnColillaEmpleado = (Button) findViewById(R.id.liquidacionEmpleado);
             btnColillaEmpleado.setOnClickListener(this::colillaEmpleado);
+
+            btnLiquidacionEmpleador = (Button) findViewById(R.id.botonPorDias);
+            btnLiquidacionEmpleador.setOnClickListener(this::liquidacionEmpleador);
 
             checkboxAuxilioTransporte = findViewById(R.id.checkboxAuxilioTransporte);
             editTextAuxilioTransporte = findViewById(R.id.editTextAuxilioTransporte);
@@ -122,11 +125,11 @@ public class LiquidacionTiempoCompleto extends AppCompatActivity {
     @RequiresApi(api = Build.VERSION_CODES.O)
     public void abrirCalendarioFechaFinal(View view) {
 
-        LocalDate fechaInicial = LocalDate.of(2024, 1, 1);
+        LocalDate fechaFinal = LocalDate.of(2024, 1, 1);
 
-        int ano = fechaInicial.getYear();
-        int mes = fechaInicial.getMonthValue() - 1;
-        int dia = fechaInicial.getDayOfMonth();
+        int ano = fechaFinal.getYear();
+        int mes = fechaFinal.getMonthValue() - 1;
+        int dia = fechaFinal.getDayOfMonth();
 
         Locale spanish = new Locale("es", "ES");
         Locale.setDefault(spanish);
@@ -142,7 +145,7 @@ public class LiquidacionTiempoCompleto extends AppCompatActivity {
                 String fechaFormateada = fechaSeleccionada.format(formatter);
 
                 // Establecer la fecha en el TextView
-                tvFechaInicial.setText(fechaFormateada);
+                tvFechaFinal.setText(fechaFormateada);
             }
         }, ano, mes, dia);
         dpd.show();
@@ -165,9 +168,14 @@ public class LiquidacionTiempoCompleto extends AppCompatActivity {
         startActivity(colillaNomimaEmpleado);
         Toast.makeText(getApplicationContext(), "Ha presionado el boton liquidacion para empleado", Toast.LENGTH_SHORT).show();
     }
+    public void liquidacionEmpleador(View view){
+        Intent colillaLiquidacionEmpleador = new Intent(LiquidacionTiempoCompleto.this, PlanillaLiquidacionEmpleador.class);
+        startActivity(colillaLiquidacionEmpleador);
+        Toast.makeText(getApplicationContext(), "Ha presionado el boton liquidación para empleador", Toast.LENGTH_SHORT).show();
+    }
 
     @Override
     public void onBackPressed() {
-
+        super.onBackPressed();
     }
 }
