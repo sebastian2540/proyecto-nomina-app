@@ -40,6 +40,7 @@
     <string name="label_fecha_final_liquidar">2. FECHA DE FINAL DEL PERIODO A LIQUIDAR</string>
     <string name="label_salario_mensual">3. INGRESE SU SALARIO MENSUAL</string>
     <string name="label_dias_laborados_semana">4. DIAS LABORADOS SEMANA</string>
+    <string name="label_salario_diario">3. INGRESE SU SALARIO DIARIO</string>
     <string name="label_auxilio_transporte_dias">5. ¿TIENE DERECHO A AUXILIO DE TRANSPORTE?</string>
     <string name="label_auxilio_transporte">4. ¿TIENE DERECHO A AUXILIO DE TRANSPORTE?</string>
     <string name="edittext_auxilio_trabajo">162000</string>
