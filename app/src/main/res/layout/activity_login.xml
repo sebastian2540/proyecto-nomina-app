@@ -12,8 +12,6 @@
         android:id="@+id/textInputLayout"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        app:counterEnabled="true"
-        app:counterMaxLength="10"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.500"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,6 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/input_usuario"
+            android:textColor="@color/black"
             android:inputType="textAutoComplete"
             tools:ignore="TextContrastCheck" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -48,6 +47,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/input_contrasena"
+            android:textColor="@color/black"
             android:inputType="numberPassword"
             tools:ignore="TextContrastCheck" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -113,6 +113,25 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.875"
         tools:ignore="SpUsage,TextSizeCheck" />
+
+    <Button
+        android:id="@+id/ButtonRegistrarse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00431919"
+        android:text="@string/label_registrarse_app"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.930"
+        tools:ignore="SpUsage,TextSizeCheck" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

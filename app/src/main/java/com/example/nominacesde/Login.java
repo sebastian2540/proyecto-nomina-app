@@ -24,7 +24,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class Login extends AppCompatActivity {
 
     TextView usuario, contrasena;
-    Button ingresar, restablecerContrasena;
+    Button ingresar, restablecerContrasena, btnRegistrarse;
 
     FirebaseAuth mAuth;
     @Override
@@ -41,7 +41,10 @@ public class Login extends AppCompatActivity {
         ingresar = findViewById(R.id.ButtonIngresar);
 
         restablecerContrasena = (Button) findViewById(R.id.ButtonOlvidasteContrasena);
-        restablecerContrasena.setOnClickListener(this::resturarContraseña);
+        restablecerContrasena.setOnClickListener(this::resturarContrasena);
+
+        btnRegistrarse = (Button) findViewById(R.id.ButtonRegistrarse);
+        btnRegistrarse.setOnClickListener(this::registrarse);
 
         ingresar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -91,10 +94,16 @@ public class Login extends AppCompatActivity {
             }
         });
     }
-    public void resturarContraseña(View view) {
+    public void resturarContrasena(View view) {
         Intent restaurar = new Intent(Login.this, RestaurarContrasena.class);
         startActivity(restaurar);
         Toast.makeText(getApplicationContext(), "Ha presionado el boton restaurar contraseña", Toast.LENGTH_SHORT).show();
+    }
+
+    public void registrarse(View view) {
+        Intent registrarse = new Intent(Login.this, Registrarse.class);
+        startActivity(registrarse);
+        Toast.makeText(getApplicationContext(), "Ha presionado el boton registrarse", Toast.LENGTH_SHORT).show();
     }
 
     @Override
