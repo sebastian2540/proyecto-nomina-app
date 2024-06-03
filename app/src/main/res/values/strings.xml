@@ -86,17 +86,38 @@
     <string name="label_documento_identificacion">Documento identificacion</string>
     <string name="label_periodo_pago">Periodo de Pago</string>
     <string name="label_dias_trabajados">Dias trabajados</string>
+    <string name="input_dias_trabajados">100</string>
     <string name="label_salario">Salario</string>
+    <string name="input_salario_ingresado">1.300.000</string>
     <string name="label_transporte">Transporte</string>
+    <string name="input_transporte_mensual">162.000</string>
     <string name="label_prestaciones_sociales">PRESTACIONES SOCIALES</string>
+    <string name="label_concepto">CONCEPTO</string>
+    <string name="label_dias_liquidar">DIAS</string>
+    <string name="label_valor_total">VALOR TOTAL</string>
     <string name="label_cesantias">Cesantías</string>
+    <string name="input_cesantias">426.417</string>
     <string name="label_intereses_cesantias">Intereses sobre cesantías</string>
+    <string name="input_intereses_Cesantias">14.925</string>
     <string name="label_prima_primer_semestre">Prima primer semestre</string>
+    <string name="input_prima_primerS">426.417</string>
     <string name="label_prima_segundo_semestre">Prima segundo semestre</string>
+    <string name="input_prima_segundoS">0</string>
     <string name="label_vacaciones">Vacaciones</string>
+    <string name="input_vacaciones">189.583</string>
     <string name="label_total">TOTAL</string>
     <string name="_label_nota">Recuerde que si ya pago la prima del semestre anterior debe restarla de este resultado</string>
     <string name="label_prima">Prima</string>
+    <string name="label_fecha_ingreso">Fecha ingreso</string>
+    <string name="label_fecha_retiro">Fecha de retiro</string>
+    <string name="label_motivo_retiro">Motivo retiro</string>
+    <string name="label_total_pagar_prestaciones">TOTAL A PAGAR POR PRESTACIONES SOCIALES</string>
+    <string name="input_total_suma_liquidacion">312.453</string>
+    <string name="label_deducciones">DEDUCCIONES</string>
+    <string name="input_deducciones">0</string>
+    <string name="label_total_pagar">TOTAL A PAGAR</string>
+    <string name="input_total_pagar">312.453</string>
+    <string name="label_manifiesto">Con la anterior liquidación manifiesto que ..... queda a paz y salvo conmigo por concepto prestaciones sociales</string>
     <!-- TODO: Remove or change this placeholder text -->
 
 </resources>

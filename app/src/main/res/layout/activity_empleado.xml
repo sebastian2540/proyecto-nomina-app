@@ -130,7 +130,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/input_identificacion_empleado"
             android:layout_width="180dp"
-            android:layout_height="wrap_content"
+            android:layout_height="61dp"
             android:hint="@string/input_identificacion"
             android:inputType="number" />
     </com.google.android.material.textfield.TextInputLayout>
