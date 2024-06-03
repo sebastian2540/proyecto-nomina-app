@@ -664,7 +664,7 @@
     <EditText
         android:id="@+id/editTextText"
         android:layout_width="170dp"
-        android:layout_height="38dp"
+        android:layout_height="48dp"
         android:ems="10"
         android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -672,7 +672,8 @@
         app:layout_constraintHorizontal_bias="0.075"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.875" />
+        app:layout_constraintVertical_bias="0.875"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/editTextText2"
@@ -685,7 +686,8 @@
         app:layout_constraintHorizontal_bias="0.924"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.874" />
+        app:layout_constraintVertical_bias="0.874"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/textView94"
