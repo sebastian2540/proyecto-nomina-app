@@ -664,7 +664,7 @@
     <EditText
         android:id="@+id/editTextText"
         android:layout_width="170dp"
-        android:layout_height="48dp"
+        android:layout_height="38dp"
         android:ems="10"
         android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"

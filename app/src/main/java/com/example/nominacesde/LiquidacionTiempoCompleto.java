@@ -145,7 +145,7 @@ public class LiquidacionTiempoCompleto extends AppCompatActivity {
                 String fechaFormateada = fechaSeleccionada.format(formatter);
 
                 // Establecer la fecha en el TextView
-                tvFechaInicial.setText(fechaFormateada);
+                tvFechaFinal.setText(fechaFormateada);
             }
         }, ano, mes, dia);
         dpd.show();
