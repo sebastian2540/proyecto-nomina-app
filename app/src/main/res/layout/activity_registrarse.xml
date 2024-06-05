@@ -62,10 +62,11 @@
         app:layout_constraintVertical_bias="0.440">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/I"
+            android:id="@+id/InputEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/input_correo_electronico_registrarse"
+            android:textColor="@color/black"
             android:inputType="textAutoComplete"
             tools:ignore="TextContrastCheck" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -96,7 +97,7 @@
         android:id="@+id/ButtonEnviar"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="#049947"
+        android:backgroundTint="@color/verde_guardar"
         android:text="@string/button_registrarse"
         android:textColor="@color/black"
         android:textFontWeight="@integer/material_motion_duration_long_2"
