@@ -46,7 +46,6 @@ public class LiquidacionTiempoCompleto extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             tvFechaInicial = findViewById(R.id.fechaIngreso);
             tvFechaFinal = findViewById(R.id.fechaFinal);
-            listas = (Spinner)findViewById(R.id.lista_tiempo_completo);
 
             btnPorDias = (Button) findViewById(R.id.botonPorDias);
             btnPorDias.setOnClickListener(this::liquidacionPorDias);
@@ -63,6 +62,7 @@ public class LiquidacionTiempoCompleto extends AppCompatActivity {
             checkboxAuxilioTransporte = findViewById(R.id.checkboxAuxilioTransporte);
             editTextAuxilioTransporte = findViewById(R.id.editTextAuxilioTransporte);
 
+            listas = (Spinner)findViewById(R.id.lista_tiempo_completo);
             ArrayAdapter<String> adaptador= new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item,datos);
             listas.setAdapter(adaptador);
             listas.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {

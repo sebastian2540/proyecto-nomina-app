@@ -65,7 +65,7 @@ public class Login extends AppCompatActivity {
                 String contrasena_empleado = contrasena.getText().toString().trim();
 
                 if(email_empleado.isEmpty() && contrasena_empleado.isEmpty()){
-                    Toast.makeText(Login.this, "Ingresar los datos obligatorios", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Login.this, "Ingresar los datos obligatorios", Toast.LENGTH_SHORT).show();
                 } else {
                     loginUser(email_empleado,contrasena_empleado);
                 }

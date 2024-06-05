@@ -3,7 +3,10 @@ package com.example.nominacesde;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -15,6 +18,8 @@ import androidx.core.view.WindowInsetsCompat;
 public class Empleado extends AppCompatActivity {
 
     ImageButton btnMenu;
+    Spinner listaAreas;
+    String[] datosLista = {"Área", "Auxiliar Administrativo", "Contabilidad", "Nómina", "Sistemas"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +34,23 @@ public class Empleado extends AppCompatActivity {
 
         btnMenu = (ImageButton) findViewById(R.id.imageButtonMenu);
         btnMenu.setOnClickListener(this::menu);
+
+        listaAreas = (Spinner) findViewById(R.id.lista_areas_empleado);
+        ArrayAdapter<String> adaptadorArea = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, datosLista);
+        listaAreas.setAdapter(adaptadorArea);
+
+        listaAreas.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
     }
     public void menu(View view) {
         Intent menu = new Intent(Empleado.this, Menu.class);

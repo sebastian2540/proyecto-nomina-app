@@ -117,7 +117,7 @@
         android:id="@+id/ButtonCerrarSesion"
         android:layout_width="379dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/red"
+        android:backgroundTint="@color/red_sesion"
         android:text="@string/button_cerrarsesion"
         android:textColor="@color/black"
         android:textSize="20dp"

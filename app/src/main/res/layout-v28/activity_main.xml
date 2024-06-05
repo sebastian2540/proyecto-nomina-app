@@ -12,7 +12,7 @@
         android:id="@+id/continuar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#049947"
+        android:backgroundTint="@color/verde_guardar"
         android:text="Continuar"
         android:textColor="@color/black"
         android:textSize="20dp"

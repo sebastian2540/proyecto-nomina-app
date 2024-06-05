@@ -2,8 +2,13 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="blue">#2196F3</color>
+    <color name="blue">#84b6f4</color>
+    <color name="blue_editar">#84b6f4</color>
     <color name="red">#F44336</color>
+    <color name="red_sesion">#f47e8e</color>
+    <color name="red_borrar">#f47e8e</color>
+    <color name="amarrillo_estado">#ffda89</color>
+    <color name="verde_guardar">#9bd3ae</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
