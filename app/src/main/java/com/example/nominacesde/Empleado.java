@@ -2,6 +2,7 @@ package com.example.nominacesde;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -10,16 +11,24 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
+
+
 public class Empleado extends AppCompatActivity {
 
     ImageButton btnMenu;
-    Spinner listaAreas;
-    String[] datosLista = {"Área", "Auxiliar Administrativo", "Contabilidad", "Nómina", "Sistemas"};
+//    Spinner listaAreas;
+//    String[] datosLista = {"Área", "Auxiliar Administrativo", "Contabilidad", "Nómina", "Sistemas"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,24 +41,41 @@ public class Empleado extends AppCompatActivity {
             return insets;
         });
 
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
+
+        db.collection("tbl_empleados").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+            String TAG = null;
+            @Override
+            public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                if(task.isSuccessful()){
+                    for(QueryDocumentSnapshot document : task.getResult()){
+                        Log.d(TAG, document.getId() + " => " + document.getData());
+                    }
+                } else {
+                    Log.w(TAG, "Error getting documents.", task.getException());
+                }
+            }
+        });
+
+
         btnMenu = (ImageButton) findViewById(R.id.imageButtonMenu);
         btnMenu.setOnClickListener(this::menu);
 
-        listaAreas = (Spinner) findViewById(R.id.lista_areas_empleado);
-        ArrayAdapter<String> adaptadorArea = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, datosLista);
-        listaAreas.setAdapter(adaptadorArea);
-
-        listaAreas.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
+//        listaAreas = (Spinner) findViewById(R.id.lista_areas_empleado);
+//        ArrayAdapter<String> adaptadorArea = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, datosLista);
+//        listaAreas.setAdapter(adaptadorArea);
+//
+//        listaAreas.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+//            @Override
+//            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+//
+//            }
+//
+//            @Override
+//            public void onNothingSelected(AdapterView<?> parent) {
+//
+//            }
+//        });
 
     }
     public void menu(View view) {

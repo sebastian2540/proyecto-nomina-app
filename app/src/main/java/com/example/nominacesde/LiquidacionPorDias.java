@@ -162,15 +162,15 @@ public class LiquidacionPorDias extends AppCompatActivity {
     }
 
     public void colillaEmpleado(View view) {
-        Intent colillaNomimaEmpleado = new Intent(LiquidacionPorDias.this, PlanillaNomina.class);
-        startActivity(colillaNomimaEmpleado);
-        Toast.makeText(getApplicationContext(), "Ha presionado el boton liquidacion para empleado", Toast.LENGTH_SHORT).show();
+//        Intent colillaNomimaEmpleado = new Intent(LiquidacionPorDias.this, PlanillaNomina.class);
+//        startActivity(colillaNomimaEmpleado);
+//        Toast.makeText(getApplicationContext(), "Ha presionado el boton liquidacion para empleado", Toast.LENGTH_SHORT).show();
     }
 
     public void colillaEmpleador(View view) {
-        Intent colillaNomimaEmpleador = new Intent(LiquidacionPorDias.this, PlanillaLiquidacionEmpleador.class);
-        startActivity(colillaNomimaEmpleador);
-        Toast.makeText(getApplicationContext(), "Ha presionado el boton liquidacion para empleador", Toast.LENGTH_SHORT).show();
+//        Intent colillaNomimaEmpleador = new Intent(LiquidacionPorDias.this, PlanillaLiquidacionEmpleador.class);
+//        startActivity(colillaNomimaEmpleador);
+//        Toast.makeText(getApplicationContext(), "Ha presionado el boton liquidacion para empleador", Toast.LENGTH_SHORT).show();
     }
 
     @Override

@@ -52,12 +52,13 @@ public class RestaurarContrasena extends AppCompatActivity {
         btnEnviarRecuperacion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                verifyEmails();
+
                 String email_empleado = email.getText().toString();
 
                 if(email_empleado.isEmpty()){
                     Toast.makeText(getApplicationContext(), "Debe ingresar un email", Toast.LENGTH_SHORT).show();
                 } else {
+                    verifyEmails();
                     sendResetEmail(email_empleado);
                 }
             }

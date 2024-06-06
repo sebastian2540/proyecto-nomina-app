@@ -672,7 +672,7 @@
         app:layout_constraintHorizontal_bias="0.075"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.875"
+        app:layout_constraintVertical_bias="0.830"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
@@ -686,7 +686,7 @@
         app:layout_constraintHorizontal_bias="0.924"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.874"
+        app:layout_constraintVertical_bias="0.830"
         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <TextView
@@ -702,7 +702,7 @@
         app:layout_constraintHorizontal_bias="0.076"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.903"
+        app:layout_constraintVertical_bias="0.853"
         tools:ignore="TextSizeCheck" />
 
     <TextView
@@ -718,7 +718,7 @@
         app:layout_constraintHorizontal_bias="0.152"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.928"
+        app:layout_constraintVertical_bias="0.870"
         tools:ignore="TextSizeCheck" />
 
     <TextView
@@ -734,7 +734,7 @@
         app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.928"
+        app:layout_constraintVertical_bias="0.870"
         tools:ignore="TextSizeCheck" />
 
     <TextView
@@ -750,7 +750,7 @@
         app:layout_constraintHorizontal_bias="0.923"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.903"
+        app:layout_constraintVertical_bias="0.853"
         tools:ignore="TextSizeCheck" />
 
     <TextView
@@ -766,7 +766,7 @@
         app:layout_constraintHorizontal_bias="0.549"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.928"
+        app:layout_constraintVertical_bias="0.870"
         tools:ignore="TextSizeCheck" />
 
     <TextView
@@ -782,8 +782,40 @@
         app:layout_constraintHorizontal_bias="0.925"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.928"
+        app:layout_constraintVertical_bias="0.870"
         tools:ignore="TextSizeCheck" />
+
+    <Button
+        android:id="@+id/GuardarLiquidacion"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:backgroundTint="@color/verde_guardar"
+        android:text="@string/button_guardar_liquidacion"
+        android:textColor="@color/black"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.942"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.980"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/CancelarLiquidacion"
+        android:layout_width="105dp"
+        android:layout_height="45dp"
+        android:backgroundTint="@color/red_borrar"
+        android:text="@string/button_cancelar_liquidacion"
+        android:textColor="@color/black"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.550"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.980"
+        tools:ignore="TouchTargetSizeCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

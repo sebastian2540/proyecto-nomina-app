@@ -27,8 +27,8 @@ public class Menu extends AppCompatActivity implements View.OnClickListener{
         btnEmpleado = (Button) findViewById(R.id.ButtonEmpleado);
         btnEmpleado.setOnClickListener(this::empleado);
 
-        btnArea = (Button) findViewById(R.id.ButtonArea);
-        btnArea.setOnClickListener(this::area);
+//        btnArea = (Button) findViewById(R.id.ButtonArea);
+//        btnArea.setOnClickListener(this::area);
 
         btnLiquidacion = (Button) findViewById(R.id.ButtonLiquidacion);
         btnLiquidacion.setOnClickListener(this);
@@ -52,11 +52,11 @@ public class Menu extends AppCompatActivity implements View.OnClickListener{
         Toast.makeText(getApplicationContext(), "Ha presionado el boton empleados", Toast.LENGTH_SHORT).show();
     }
 
-    public void area(View view) {
-        Intent areas = new Intent(Menu.this, Area.class);
-        startActivity(areas);
-        Toast.makeText(getApplicationContext(), "Ha presionado el boton area", Toast.LENGTH_SHORT).show();
-    }
+//    public void area(View view) {
+//        Intent areas = new Intent(Menu.this, Area.class);
+//        startActivity(areas);
+//        Toast.makeText(getApplicationContext(), "Ha presionado el boton area", Toast.LENGTH_SHORT).show();
+//    }
 
     public void cerrarSesion(View view) {
         Intent cerrarSesion = new Intent(Menu.this, Login.class);
