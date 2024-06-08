@@ -14,7 +14,12 @@
     <string name="input_correo_electronico">Correo Electrónico</string>
     <string name="input_confirmar_correo_electronico">Confirmar Correo Electrónico</string>
     <string name="button_restablecer_contrasena">Enviar</string>
+<<<<<<< HEAD
 
+=======
+    <string name="input_validacion_correo_electronico">Validación</string>
+    
+>>>>>>> 42361f9f1e7f27cc97d5cf2e7fb1435247e16c6f
     <!--Registrarse-->
     <string name="label_registrarse">Resgistrarse</string>
     <string name="input_correo_electronico_registrarse">Correo Electrónico</string>
@@ -22,7 +27,7 @@
     <string name="button_registrarse">Enviar</string>
 
     <!--Menú-->
-    <string name="nombre_usuario">Juan Camilo Sanchez Perez</string>
+    <string name="nombre_usuario">Sebastian Villada Jaramillo</string>
     <string name="cargo_usuario">Administrador</string>
     <string name="area_usuario">Nómina</string>
     <string name="button_instrucciones">Instrucciones</string>

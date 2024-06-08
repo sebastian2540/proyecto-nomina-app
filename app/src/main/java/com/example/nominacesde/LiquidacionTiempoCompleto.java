@@ -32,7 +32,7 @@ public class LiquidacionTiempoCompleto extends AppCompatActivity {
     TextView tvFechaInicial, tvFechaFinal;
     Spinner listas;
     String[] datos = {"Seleccione Empleado","Dayana Hernandez", "Luisa Rojas Metaute", "Sebastian Villada", "Susana Villa"};
-    Button btnPorDias, btnColillaEmpleado, btnColillaEmpleador;
+    Button btnPorDias, btnColillaEmpleado, btnColillaEmpleador, btnSeleccionarFechaInicial,getBtnSeleccionarFechaFinal;
     ImageButton btnMenu;
     private CheckBox checkboxAuxilioTransporte, checkBoxNo;
     private EditText editTextAuxilioTransporte;
