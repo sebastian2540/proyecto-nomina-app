@@ -26,7 +26,7 @@ public class RestaurarContrasena extends AppCompatActivity {
     ImageButton btnInicio;
 
     TextView email, confirEmail;
-    Button btnEnviarRecuperacion;
+    Button btnEnviarRecuperacion, btnValidacionCorreo;
     FirebaseAuth mAuth;
 
     @Override
@@ -47,6 +47,9 @@ public class RestaurarContrasena extends AppCompatActivity {
         btnInicio = (ImageButton) findViewById(R.id.imageButtonInicio);
         btnInicio.setOnClickListener(this::inicioSesion);
 
+        btnValidacionCorreo = (Button) findViewById(R.id.ButtonValidacionCorreo);
+        btnValidacionCorreo.setOnClickListener(this::verifyEmails);
+
         btnEnviarRecuperacion = findViewById(R.id.ButtonEnviar);
 
         btnEnviarRecuperacion.setOnClickListener(new View.OnClickListener() {
@@ -58,7 +61,6 @@ public class RestaurarContrasena extends AppCompatActivity {
                 if(email_empleado.isEmpty()){
                     Toast.makeText(getApplicationContext(), "Debe ingresar un email", Toast.LENGTH_SHORT).show();
                 } else {
-                    verifyEmails();
                     sendResetEmail(email_empleado);
                 }
             }
@@ -79,7 +81,7 @@ public class RestaurarContrasena extends AppCompatActivity {
         });
     }
 
-    public void verifyEmails(){
+    public void verifyEmails(View view){
         String emailEmpleado = email.getText().toString();
         String emailConfirmar = confirEmail.getText().toString();
 

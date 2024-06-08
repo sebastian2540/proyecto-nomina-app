@@ -2,6 +2,7 @@ package com.example.nominacesde;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -20,13 +21,17 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.Firebase;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
 
 public class Login extends AppCompatActivity {
 
     TextView usuario, contrasena;
     Button ingresar, restablecerContrasena, btnRegistrarse;
-
     FirebaseAuth mAuth;
+    FirebaseFirestore db = FirebaseFirestore.getInstance();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -82,6 +87,7 @@ public class Login extends AppCompatActivity {
                 if(task.isSuccessful()){
                     finish();
                     startActivity(new Intent(Login.this, Menu.class));
+                    readDataFromFirestore();
                     Toast.makeText(Login.this,"BIENVENIDO",Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(Login.this, "Error" + task.getException().getMessage(),Toast.LENGTH_SHORT).show();
@@ -93,6 +99,24 @@ public class Login extends AppCompatActivity {
                 Toast.makeText(Login.this, "Error", Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    private void readDataFromFirestore() {
+        db.collection("tbl_empleados")
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    String TAG = null;
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                Log.d(TAG, document.getId() + " => " + document.getData());
+                            }
+                        } else {
+                            Log.w(TAG, "Error al obtener documentos.", task.getException());
+                        }
+                    }
+                });
     }
     public void resturarContrasena(View view) {
         Intent restaurar = new Intent(Login.this, RestaurarContrasena.class);

@@ -14,6 +14,7 @@
     <string name="input_correo_electronico">Correo Electrónico</string>
     <string name="input_confirmar_correo_electronico">Confirmar Correo Electrónico</string>
     <string name="button_restablecer_contrasena">Enviar</string>
+    <string name="input_validacion_correo_electronico">Validación</string>
     
     <!--Registrarse-->
     <string name="label_registrarse">Resgistrarse</string>
@@ -22,7 +23,7 @@
     <string name="button_registrarse">Enviar</string>
     
     <!--Menú-->
-    <string name="nombre_usuario">Juan Camilo Sanchez Perez</string>
+    <string name="nombre_usuario">Sebastian Villada Jaramillo</string>
     <string name="cargo_usuario">Administrador</string>
     <string name="area_usuario">Nómina</string>
     <string name="button_instrucciones">Instrucciones</string>
