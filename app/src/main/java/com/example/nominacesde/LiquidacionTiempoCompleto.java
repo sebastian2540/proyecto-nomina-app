@@ -34,7 +34,7 @@ public class LiquidacionTiempoCompleto extends AppCompatActivity {
     String[] datos = {"Seleccione Empleado","Dayana Hernandez", "Luisa Rojas Metaute", "Sebastian Villada", "Susana Villa"};
     Button btnPorDias, btnColillaEmpleado, btnColillaEmpleador;
     ImageButton btnMenu;
-    private CheckBox checkboxAuxilioTransporte;
+    private CheckBox checkboxAuxilioTransporte, checkBoxNo;
     private EditText editTextAuxilioTransporte;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +61,7 @@ public class LiquidacionTiempoCompleto extends AppCompatActivity {
 
             checkboxAuxilioTransporte = findViewById(R.id.checkboxAuxilioTransporte);
             editTextAuxilioTransporte = findViewById(R.id.editTextAuxilioTransporte);
+            checkBoxNo = findViewById(R.id.checkboxAuxilioTransporteFalse);
 
             listas = (Spinner)findViewById(R.id.lista_tiempo_completo);
             ArrayAdapter<String> adaptador= new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item,datos);
@@ -81,12 +82,28 @@ public class LiquidacionTiempoCompleto extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     if (checkboxAuxilioTransporte.isChecked()) {
-                        editTextAuxilioTransporte.setVisibility(View.VISIBLE);
+                        if (checkBoxNo.isChecked()) {
+                            checkboxAuxilioTransporte.setChecked(false);
+                        } else {
+                            editTextAuxilioTransporte.setVisibility(View.VISIBLE);
+                        }
                     } else {
                         editTextAuxilioTransporte.setVisibility(View.GONE);
                     }
                 }
             });
+
+            checkBoxNo.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (checkBoxNo.isChecked()) {
+                        if (checkboxAuxilioTransporte.isChecked()) {
+                            checkBoxNo.setChecked(false);
+                        }
+                    }
+                }
+            });
+
 
             return insets;
         });

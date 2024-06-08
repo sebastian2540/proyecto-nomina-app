@@ -14,13 +14,13 @@
     <string name="input_correo_electronico">Correo Electrónico</string>
     <string name="input_confirmar_correo_electronico">Confirmar Correo Electrónico</string>
     <string name="button_restablecer_contrasena">Enviar</string>
-    
+
     <!--Registrarse-->
     <string name="label_registrarse">Resgistrarse</string>
     <string name="input_correo_electronico_registrarse">Correo Electrónico</string>
     <string name="input_contrasena_registrarse">Contraseña</string>
     <string name="button_registrarse">Enviar</string>
-    
+
     <!--Menú-->
     <string name="nombre_usuario">Juan Camilo Sanchez Perez</string>
     <string name="cargo_usuario">Administrador</string>
@@ -93,8 +93,11 @@
     <string name="label_documento_identificacion">Documento identificacion</string>
     <string name="label_periodo_pago">Periodo de Pago</string>
     <string name="label_dias_trabajados">Dias trabajados</string>
+    <string name="label_dias_mensualizado">Dias trabajados (mensual)</string>
     <string name="input_dias_trabajados">100</string>
     <string name="label_salario">Salario</string>
+    <string name="label_salario_diario_liquidacion">Salario Diario</string>
+    <string name="label_salario_mensualizado">Salario mensual</string>
     <string name="input_salario_ingresado">1.300.000</string>
     <string name="label_transporte">Transporte</string>
     <string name="input_transporte_mensual">162.000</string>
@@ -124,7 +127,7 @@
     <string name="input_deducciones">0</string>
     <string name="label_total_pagar">TOTAL A PAGAR</string>
     <string name="input_total_pagar">312.453</string>
-    <string name="label_manifiesto">Con la anterior liquidación manifiesto que ..... queda a paz y salvo conmigo por concepto prestaciones sociales</string>
+    <string name="label_manifiesto">Con la anterior liquidación manifiesto que (INFORMACIÓN EMPRESA) queda a paz y salvo conmigo por concepto prestaciones sociales</string>
     <!-- TODO: Remove or change this placeholder text -->
 
 </resources>
