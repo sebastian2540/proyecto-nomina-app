@@ -32,7 +32,7 @@ public class Area extends AppCompatActivity {
     public void menu(View view) {
         Intent menu = new Intent(Area.this, Menu.class);
         startActivity(menu);
-        Toast.makeText(getApplicationContext(), "Ha presionado el boton menu", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(getApplicationContext(), "Ha presionado el boton menu", Toast.LENGTH_SHORT).show();
     }
 
     @Override

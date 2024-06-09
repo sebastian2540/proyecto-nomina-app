@@ -33,13 +33,13 @@ public class PlanillaNomina extends AppCompatActivity implements View.OnClickLis
     public void onClick(View v) {
         Intent guardarLiquidacion = new Intent(PlanillaNomina.this, LiquidacionTiempoCompleto.class);
         startActivity(guardarLiquidacion);
-        Toast.makeText(getApplicationContext(), "Ha presionado el boton guarar", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(getApplicationContext(), "Ha presionado el boton guarar", Toast.LENGTH_SHORT).show();
     }
 
     public void cancelarLiquidacion(View v) {
         Intent cancelarLiquidacion = new Intent(PlanillaNomina.this, LiquidacionTiempoCompleto.class);
         startActivity(cancelarLiquidacion);
-        Toast.makeText(getApplicationContext(), "Ha presionado el boton cancelar", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(getApplicationContext(), "Ha presionado el boton cancelar", Toast.LENGTH_SHORT).show();
     }
 
 }

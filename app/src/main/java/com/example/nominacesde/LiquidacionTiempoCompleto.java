@@ -34,7 +34,7 @@ public class LiquidacionTiempoCompleto extends AppCompatActivity {
     String[] datos = {"Seleccione Empleado","Dayana Hernandez", "Luisa Rojas Metaute", "Sebastian Villada", "Susana Villa"};
     Button btnPorDias, btnColillaEmpleado, btnColillaEmpleador, btnSeleccionarFechaInicial,getBtnSeleccionarFechaFinal;
     ImageButton btnMenu;
-    private CheckBox checkboxAuxilioTransporte, checkBoxNo;
+    private CheckBox checkboxAuxilioTransporte, checkBoxAuxlioTransporteNo;
     private EditText editTextAuxilioTransporte;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,8 +60,8 @@ public class LiquidacionTiempoCompleto extends AppCompatActivity {
             btnColillaEmpleador.setOnClickListener(this::colillaEmpleador);
 
             checkboxAuxilioTransporte = findViewById(R.id.checkboxAuxilioTransporte);
+            checkBoxAuxlioTransporteNo = findViewById(R.id.checkboxAuxilioTransporteFalse);
             editTextAuxilioTransporte = findViewById(R.id.editTextAuxilioTransporte);
-            checkBoxNo = findViewById(R.id.checkboxAuxilioTransporteFalse);
 
             listas = (Spinner)findViewById(R.id.lista_tiempo_completo);
             ArrayAdapter<String> adaptador= new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item,datos);
@@ -82,7 +82,7 @@ public class LiquidacionTiempoCompleto extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     if (checkboxAuxilioTransporte.isChecked()) {
-                        if (checkBoxNo.isChecked()) {
+                        if (checkBoxAuxlioTransporteNo.isChecked()) {
                             checkboxAuxilioTransporte.setChecked(false);
                         } else {
                             editTextAuxilioTransporte.setVisibility(View.VISIBLE);
@@ -93,18 +93,16 @@ public class LiquidacionTiempoCompleto extends AppCompatActivity {
                 }
             });
 
-            checkBoxNo.setOnClickListener(new View.OnClickListener() {
+            checkBoxAuxlioTransporteNo.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    if (checkBoxNo.isChecked()) {
+                    if (checkBoxAuxlioTransporteNo.isChecked()) {
                         if (checkboxAuxilioTransporte.isChecked()) {
-                            checkBoxNo.setChecked(false);
+                            checkBoxAuxlioTransporteNo.setChecked(false);
                         }
                     }
                 }
             });
-
-
             return insets;
         });
     }
@@ -171,25 +169,25 @@ public class LiquidacionTiempoCompleto extends AppCompatActivity {
     public void liquidacionPorDias(View view) {
         Intent lqPorDias = new Intent(LiquidacionTiempoCompleto.this, LiquidacionPorDias.class);
         startActivity(lqPorDias);
-        Toast.makeText(getApplicationContext(), "Ha presionado el boton liquidacion por dias", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(getApplicationContext(), "Ha presionado el boton liquidacion por dias", Toast.LENGTH_SHORT).show();
     }
 
     public void menu(View view) {
         Intent menu = new Intent(LiquidacionTiempoCompleto.this, Menu.class);
         startActivity(menu);
-        Toast.makeText(getApplicationContext(), "Ha presionado el boton menu", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(getApplicationContext(), "Ha presionado el boton menu", Toast.LENGTH_SHORT).show();
     }
 
     public void colillaEmpleado(View view) {
         Intent colillaNomimaEmpleado = new Intent(LiquidacionTiempoCompleto.this, PlanillaNomina.class);
         startActivity(colillaNomimaEmpleado);
-        Toast.makeText(getApplicationContext(), "Ha presionado el boton liquidacion para empleado", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(getApplicationContext(), "Ha presionado el boton liquidacion para empleado", Toast.LENGTH_SHORT).show();
     }
 
     public void colillaEmpleador(View view) {
         Intent colillaNomimaEmpleador = new Intent(LiquidacionTiempoCompleto.this, PlanillaLiquidacionEmpleador.class);
         startActivity(colillaNomimaEmpleador);
-        Toast.makeText(getApplicationContext(), "Ha presionado el boton liquidacion para empleador", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(getApplicationContext(), "Ha presionado el boton liquidacion para empleador", Toast.LENGTH_SHORT).show();
     }
 
     @Override

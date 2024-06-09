@@ -31,7 +31,7 @@ public class Instrucciones extends AppCompatActivity {
     public void menu(View view) {
         Intent menu = new Intent(Instrucciones.this, Menu.class);
         startActivity(menu);
-        Toast.makeText(getApplicationContext(), "Ha presionado el boton menu", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(getApplicationContext(), "Ha presionado el boton menu", Toast.LENGTH_SHORT).show();
     }
 
     @Override

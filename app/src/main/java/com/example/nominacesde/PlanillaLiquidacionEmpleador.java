@@ -35,12 +35,12 @@ public class PlanillaLiquidacionEmpleador extends AppCompatActivity {
     public void guardarLiquidacion(View v) {
         Intent guardarLiquidacion = new Intent(PlanillaLiquidacionEmpleador.this, LiquidacionPorDias.class);
         startActivity(guardarLiquidacion);
-        Toast.makeText(getApplicationContext(), "Ha presionado el boton guarar", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(getApplicationContext(), "Ha presionado el boton guarar", Toast.LENGTH_SHORT).show();
     }
 
     public void cancelarLiquidacion(View v) {
         Intent cancelarLiquidacion = new Intent(PlanillaLiquidacionEmpleador.this, LiquidacionPorDias.class);
         startActivity(cancelarLiquidacion);
-        Toast.makeText(getApplicationContext(), "Ha presionado el boton cancelar", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(getApplicationContext(), "Ha presionado el boton cancelar", Toast.LENGTH_SHORT).show();
     }
 }

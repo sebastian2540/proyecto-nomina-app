@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent continuar = new Intent(MainActivity.this, Login.class);
                 startActivity(continuar);
-                Toast.makeText(getApplicationContext(), "Ha presionado el boton continuar", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getApplicationContext(), "Ha presionado el boton continuar", Toast.LENGTH_SHORT).show();
             }
         });
     }

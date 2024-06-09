@@ -80,6 +80,6 @@ public class Registrarse extends AppCompatActivity {
     public void inicioSesion(View view) {
         Intent inicio = new Intent(Registrarse.this, Login.class);
         startActivity(inicio);
-        Toast.makeText(getApplicationContext(), "Ha presionado el boton inicio", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(getApplicationContext(), "Ha presionado el boton inicio", Toast.LENGTH_SHORT).show();
     }
 }

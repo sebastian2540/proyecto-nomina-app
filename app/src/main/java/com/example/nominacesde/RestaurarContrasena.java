@@ -87,7 +87,7 @@ public class RestaurarContrasena extends AppCompatActivity {
 
         if(TextUtils.isEmpty(emailEmpleado) || TextUtils.isEmpty(emailConfirmar)){
             Toast.makeText(getApplicationContext(), "Debe ingresar un email y confirmarlo", Toast.LENGTH_SHORT).show();
-        } else if (!emailEmpleado.equals(confirEmail)) {
+        } else if (!emailEmpleado.equals(emailConfirmar)) {
             Toast.makeText(getApplicationContext(), "Los correos electrónico no coinciden", Toast.LENGTH_SHORT).show();
         } else {
             Toast.makeText(getApplicationContext(), "Correo electrónico confirmado correctamente", Toast.LENGTH_SHORT).show();
@@ -97,7 +97,7 @@ public class RestaurarContrasena extends AppCompatActivity {
     public void inicioSesion(View view) {
         Intent inicio = new Intent(RestaurarContrasena.this, Login.class);
         startActivity(inicio);
-        Toast.makeText(getApplicationContext(), "Ha presionado el boton inicio", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(getApplicationContext(), "Ha presionado el boton inicio", Toast.LENGTH_SHORT).show();
     }
 
     @Override

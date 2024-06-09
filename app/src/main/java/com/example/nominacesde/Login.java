@@ -26,6 +26,9 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
+import android.content.DialogInterface;
+import androidx.appcompat.app.AlertDialog;
+
 public class Login extends AppCompatActivity {
 
     TextView usuario, contrasena;
@@ -65,7 +68,6 @@ public class Login extends AppCompatActivity {
                 }
                  */
 
-
                 String email_empleado = usuario.getText().toString().trim();
                 String contrasena_empleado = contrasena.getText().toString().trim();
 
@@ -74,8 +76,6 @@ public class Login extends AppCompatActivity {
                 } else {
                     loginUser(email_empleado,contrasena_empleado);
                 }
-
-
             }
         });
     }
@@ -88,15 +88,15 @@ public class Login extends AppCompatActivity {
                     finish();
                     startActivity(new Intent(Login.this, Menu.class));
                     readDataFromFirestore();
-                    Toast.makeText(Login.this,"BIENVENIDO",Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(Login.this,"BIENVENIDO",Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(Login.this, "Error" + task.getException().getMessage(),Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(Login.this, "Error" + task.getException().getMessage(),Toast.LENGTH_SHORT).show();
                 }
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
-                Toast.makeText(Login.this, "Error", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(Login.this, "Error", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -121,13 +121,13 @@ public class Login extends AppCompatActivity {
     public void resturarContrasena(View view) {
         Intent restaurar = new Intent(Login.this, RestaurarContrasena.class);
         startActivity(restaurar);
-        Toast.makeText(getApplicationContext(), "Ha presionado el boton restaurar contraseña", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(getApplicationContext(), "Ha presionado el boton restaurar contraseña", Toast.LENGTH_SHORT).show();
     }
 
     public void registrarse(View view) {
         Intent registrarse = new Intent(Login.this, Registrarse.class);
         startActivity(registrarse);
-        Toast.makeText(getApplicationContext(), "Ha presionado el boton registrarse", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(getApplicationContext(), "Ha presionado el boton registrarse", Toast.LENGTH_SHORT).show();
     }
 
     @Override
