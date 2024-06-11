@@ -74,6 +74,7 @@
     <string name="input_tipo_salario_empleado">Tipo Salario</string>
     <string name="input_salario_empleado">Salario</string>"
     <string name="input_rol_empleado">Rol</string>
+    <string name="input_id_empleado">ID Empleado</string>
     <string name="input_contrasena_empleado">Contraseña</string>
 
     <!--Instrucciones-->
