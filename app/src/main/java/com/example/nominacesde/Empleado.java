@@ -138,7 +138,7 @@ public class Empleado extends AppCompatActivity {
                                     .addOnFailureListener(e -> Toast.makeText(Empleado.this, "Error al guardar usuario", Toast.LENGTH_SHORT).show());
                         }
                     } else {
-                        Toast.makeText(Empleado.this, "Error al obtener los datos", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Empleado.this, "Error al obtener los datos del usuario", Toast.LENGTH_SHORT).show();
                     }
                 });
             }
