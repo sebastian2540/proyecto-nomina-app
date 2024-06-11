@@ -174,4 +174,16 @@ public class Menu extends AppCompatActivity implements View.OnClickListener{
     public void onBackPressed() {
 
     }
+    /*
+    activiy_main.xml - RecyclerViewUsuario.xml
+    MainActivity.java - RecyclerViewUsuario.java
+
+    item_usuario.xml
+
+    activity_edit_user.xml - EditarUsuario
+    EditUserActivity.java - EditarUsuario
+
+    Usuario.java
+    UsuarioAdapter.java
+     */
 }

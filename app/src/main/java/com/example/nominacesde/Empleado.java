@@ -1,5 +1,6 @@
 package com.example.nominacesde;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
@@ -15,6 +16,7 @@ import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -116,6 +118,7 @@ public class Empleado extends AppCompatActivity {
                         if(!querySnapshot.isEmpty()) {
                             Toast.makeText(Empleado.this, "El usuario ya existe", Toast.LENGTH_SHORT).show();
                         } else {
+                            // Guardar el usuario en la base de datos si no existe
                             Map<String, Object> user = new HashMap<>();
                             user.put("id_empleado", identificacion);
                             user.put("nombre_empleado", nombre);
@@ -130,17 +133,7 @@ public class Empleado extends AppCompatActivity {
                             db.collection("tbl_empleados")
                                     .add(user)
                                     .addOnSuccessListener(documentReference -> {
-                                        Toast.makeText(Empleado.this, "Usuario guardado con éxito", Toast.LENGTH_SHORT).show();
-                                        // Limpiar los campos después de guardar
-                                        editTextIdentificacion.setText("");
-                                        editTextNombre.setText("");
-                                        editTextApellido.setText("");
-                                        editTextEmail.setText("");
-                                        editTextCargo.setText("");
-                                        editTextTipoContrato.setText("");
-                                        editTextSalario.setText("");
-                                        editTextIdEmpleado.setText("");
-                                        editTextContrasena.setText("");
+                                        showConfirmationDialog();
                                     })
                                     .addOnFailureListener(e -> Toast.makeText(Empleado.this, "Error al guardar usuario", Toast.LENGTH_SHORT).show());
                         }
@@ -179,6 +172,50 @@ public class Empleado extends AppCompatActivity {
         editTextContrasena.setText("");
         startActivity(cancelarEmpleado);
 //        Toast.makeText(getApplicationContext(), "Ha presionado el boton cancelar", Toast.LENGTH_SHORT).show();
+    }
+
+    private void showConfirmationDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Confirmación");
+        builder.setMessage("¿Estás seguro de que quieres guardar el empleado?");
+
+        // Botón de confirmación
+        builder.setPositiveButton("SI", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                // Acción a realizar si el usuario confirma
+                Toast.makeText(Empleado.this, "Usuario guardado con éxito", Toast.LENGTH_SHORT).show();
+                // Limpiar los campos después de guardar
+                editTextIdentificacion.setText("");
+                editTextNombre.setText("");
+                editTextApellido.setText("");
+                editTextEmail.setText("");
+                editTextCargo.setText("");
+                editTextTipoContrato.setText("");
+                editTextSalario.setText("");
+                editTextIdEmpleado.setText("");
+                editTextContrasena.setText("");
+                performPositiveAction();
+            }
+        });
+
+        // Botón de cancelación
+        builder.setNegativeButton("NO", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                // Acción a realizar si el usuario cancela
+                dialog.dismiss();
+            }
+        });
+
+        // Crear y mostrar el AlertDialog
+        AlertDialog dialog = builder.create();
+        dialog.show();
+    }
+
+    private void performPositiveAction() {
+        // Acción que se realiza si el usuario confirma
+        // Por ejemplo, cerrar la actividad
     }
 
     @Override

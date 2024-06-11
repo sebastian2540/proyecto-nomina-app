@@ -282,4 +282,5 @@
             android:hint="@string/input_contrasena_empleado"
             android:inputType="numberPassword" />
     </com.google.android.material.textfield.TextInputLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
